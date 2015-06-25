@@ -5,16 +5,16 @@
   
   <title>phoenix for hbase | Thinkml&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1234567891011121314151617181920212223242526272829303132package edu.dcy.phoenix;import java.sql.Connection;import java.sql.DriverManager;import java.sql.ResultSet;import java.sql.SQLException;import ja">
+  <meta name="description" content="package edu.dcy.phoenix;import java.sql.Connection;import java.sql.DriverManager;import java.sql.ResultSet;import java.sql.SQLException;import java.sql.PreparedStatement;import java.sql.Statement;publ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="phoenix for hbase">
 <meta property="og:url" content="http://needpp.com/2014/12/30/phoenix for hbase/index.html">
 <meta property="og:site_name" content="Thinkml's blog">
-<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132package edu.dcy.phoenix;import java.sql.Connection;import java.sql.DriverManager;import java.sql.ResultSet;import java.sql.SQLException;import ja">
+<meta property="og:description" content="package edu.dcy.phoenix;import java.sql.Connection;import java.sql.DriverManager;import java.sql.ResultSet;import java.sql.SQLException;import java.sql.PreparedStatement;import java.sql.Statement;publ">
 <meta property="og:updated_time" content="2015-06-25T01:10:06.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="phoenix for hbase">
-<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132package edu.dcy.phoenix;import java.sql.Connection;import java.sql.DriverManager;import java.sql.ResultSet;import java.sql.SQLException;import ja">
+<meta name="twitter:description" content="package edu.dcy.phoenix;import java.sql.Connection;import java.sql.DriverManager;import java.sql.ResultSet;import java.sql.SQLException;import java.sql.PreparedStatement;import java.sql.Statement;publ">
   
     <link rel="alternative" href="/atom.xml" title="Thinkml&#39;s blog" type="application/atom+xml">
   
@@ -95,7 +95,7 @@
 				        
 							<li><a href="/archives">所有文章</a></li>
 				        
-							<li><a href="/tags/随笔">随笔</a></li>
+							<li><a href="/tags/life">随笔</a></li>
 				        
 						</ul>
 					</nav>
@@ -134,7 +134,7 @@
 				
 				<section class="switch-part switch-part4">
 				
-					<div id="js-aboutme">爱分享，爱折腾...</div>
+					<div id="js-aboutme">奔跑的蚂蚁，爱分享，爱折腾...</div>
 				</section>
 				
 			</div>
@@ -166,7 +166,7 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
-					<li><a href="/tags/随笔">随笔</a></li>
+					<li><a href="/tags/life">随笔</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -222,7 +222,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">package edu.dcy.phoenix;</span><br><span class="line"></span><br><span class="line"><span class="built_in">import</span> java.sql.Connection;</span><br><span class="line"><span class="built_in">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="built_in">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="built_in">import</span> java.sql.SQLException;</span><br><span class="line"><span class="built_in">import</span> java.sql.PreparedStatement;</span><br><span class="line"><span class="built_in">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line">public class HelloWorld &#123;</span><br><span class="line"></span><br><span class="line">	public static void main<span class="params">(String[] args)</span> throws SQLException &#123;</span><br><span class="line">		Statement stmt = null;</span><br><span class="line">		ResultSet rset = null;</span><br><span class="line">		</span><br><span class="line">		Connection con = DriverManager.getConnection<span class="params">(<span class="string">"jdbc:phoenix:master"</span>)</span>;</span><br><span class="line">		stmt = con.createStatement<span class="params">()</span>;</span><br><span class="line">		</span><br><span class="line">		stmt.executeUpdate<span class="params">(<span class="string">"create table test (mykey integer not null primary key, mycolumn varchar)"</span>)</span>;</span><br><span class="line">		stmt.executeUpdate<span class="params">(<span class="string">"upsert into test values (1,'Hello')"</span>)</span>;</span><br><span class="line">		stmt.executeUpdate<span class="params">(<span class="string">"upsert into test values (2,'World!')"</span>)</span>;</span><br><span class="line">		con.commit<span class="params">()</span>;</span><br><span class="line">		</span><br><span class="line">		PreparedStatement statement = con.prepareStatement<span class="params">(<span class="string">"select * from test"</span>)</span>;</span><br><span class="line">		rset = statement.executeQuery<span class="params">()</span>;</span><br><span class="line">		while <span class="params">(rset.next<span class="params">()</span>)</span> &#123;</span><br><span class="line">			System.out.println<span class="params">(rset.getString<span class="params">(<span class="string">"mycolumn"</span>)</span>)</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		statement.close<span class="params">()</span>;</span><br><span class="line">		con.close<span class="params">()</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <figure class="highlight openscad"><table><tr><td class="code"><pre><span class="line">package edu.dcy.phoenix;</span><br><span class="line"></span><br><span class="line"><span class="built_in">import</span> java.sql.Connection;</span><br><span class="line"><span class="built_in">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="built_in">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="built_in">import</span> java.sql.SQLException;</span><br><span class="line"><span class="built_in">import</span> java.sql.PreparedStatement;</span><br><span class="line"><span class="built_in">import</span> java.sql.Statement;</span><br><span class="line"></span><br><span class="line">public class HelloWorld &#123;</span><br><span class="line"></span><br><span class="line">	public static void main<span class="params">(String[] args)</span> throws SQLException &#123;</span><br><span class="line">		Statement stmt = null;</span><br><span class="line">		ResultSet rset = null;</span><br><span class="line">		</span><br><span class="line">		Connection con = DriverManager.getConnection<span class="params">(<span class="string">"jdbc:phoenix:master"</span>)</span>;</span><br><span class="line">		stmt = con.createStatement<span class="params">()</span>;</span><br><span class="line">		</span><br><span class="line">		stmt.executeUpdate<span class="params">(<span class="string">"create table test (mykey integer not null primary key, mycolumn varchar)"</span>)</span>;</span><br><span class="line">		stmt.executeUpdate<span class="params">(<span class="string">"upsert into test values (1,'Hello')"</span>)</span>;</span><br><span class="line">		stmt.executeUpdate<span class="params">(<span class="string">"upsert into test values (2,'World!')"</span>)</span>;</span><br><span class="line">		con.commit<span class="params">()</span>;</span><br><span class="line">		</span><br><span class="line">		PreparedStatement statement = con.prepareStatement<span class="params">(<span class="string">"select * from test"</span>)</span>;</span><br><span class="line">		rset = statement.executeQuery<span class="params">()</span>;</span><br><span class="line">		while <span class="params">(rset.next<span class="params">()</span>)</span> &#123;</span><br><span class="line">			System.out.println<span class="params">(rset.getString<span class="params">(<span class="string">"mycolumn"</span>)</span>)</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		statement.close<span class="params">()</span>;</span><br><span class="line">		con.close<span class="params">()</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>

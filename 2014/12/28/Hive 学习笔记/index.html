@@ -14,7 +14,7 @@
 
 
 
-示例1234567CREATE TABLE employees (    name STRING,    salary FLOAT,">
+示例CREATE TABLE employees (    name STRING,    salary FLOAT,    subo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hive 学习笔记">
 <meta property="og:url" content="http://needpp.com/2014/12/28/Hive 学习笔记/index.html">
@@ -28,7 +28,7 @@
 
 
 
-示例1234567CREATE TABLE employees (    name STRING,    salary FLOAT,">
+示例CREATE TABLE employees (    name STRING,    salary FLOAT,    subo">
 <meta property="og:image" content="http://needpp.qiniudn.com/2014/12/28/04f5be48-8e62-11e4-a385-f23c9156bf7b.png">
 <meta property="og:image" content="http://needpp.qiniudn.com/2014/12/28/064bac12-8e62-11e4-a385-f23c9156bf7b.png">
 <meta property="og:image" content="http://needpp.qiniudn.com/2014/12/28/05695182-8e62-11e4-a385-f23c9156bf7b.png">
@@ -45,7 +45,7 @@
 
 
 
-示例1234567CREATE TABLE employees (    name STRING,    salary FLOAT,">
+示例CREATE TABLE employees (    name STRING,    salary FLOAT,    subo">
   
     <link rel="alternative" href="/atom.xml" title="Thinkml&#39;s blog" type="application/atom+xml">
   
@@ -126,7 +126,7 @@
 				        
 							<li><a href="/archives">所有文章</a></li>
 				        
-							<li><a href="/tags/随笔">随笔</a></li>
+							<li><a href="/tags/life">随笔</a></li>
 				        
 						</ul>
 					</nav>
@@ -165,7 +165,7 @@
 				
 				<section class="switch-part switch-part4">
 				
-					<div id="js-aboutme">爱分享，爱折腾...</div>
+					<div id="js-aboutme">奔跑的蚂蚁，爱分享，爱折腾...</div>
 				</section>
 				
 			</div>
@@ -197,7 +197,7 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
-					<li><a href="/tags/随笔">随笔</a></li>
+					<li><a href="/tags/life">随笔</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -262,15 +262,15 @@
 </ul>
 <p><img src="http://needpp.qiniudn.com/2014/12/28/064bac12-8e62-11e4-a385-f23c9156bf7b.png" alt=""></p>
 <ul>
-<li>示例<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> employees (</span><br><span class="line">    name <span class="keyword">STRING</span>,</span><br><span class="line">    salary <span class="built_in">FLOAT</span>,</span><br><span class="line">    subordinates <span class="built_in">ARRAY</span>&lt;<span class="keyword">STRING</span>&gt;,</span><br><span class="line">    deductions MAP&lt;<span class="keyword">STRING</span>, <span class="built_in">FLOAT</span>&gt;,</span><br><span class="line">    address STRUCT&lt;street:<span class="keyword">STRING</span>, city:<span class="keyword">STRING</span>, state:<span class="keyword">STRING</span>, zip:<span class="built_in">INT</span>&gt;</span><br><span class="line">) PARTITIONED <span class="keyword">BY</span> (country <span class="keyword">STRING</span>, state <span class="keyword">STRING</span>);</span></span><br></pre></td></tr></table></figure>
+<li>示例<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> employees (</span><br><span class="line">    name <span class="keyword">STRING</span>,</span><br><span class="line">    salary <span class="built_in">FLOAT</span>,</span><br><span class="line">    subordinates <span class="built_in">ARRAY</span>&lt;<span class="keyword">STRING</span>&gt;,</span><br><span class="line">    deductions MAP&lt;<span class="keyword">STRING</span>, <span class="built_in">FLOAT</span>&gt;,</span><br><span class="line">    address STRUCT&lt;street:<span class="keyword">STRING</span>, city:<span class="keyword">STRING</span>, state:<span class="keyword">STRING</span>, zip:<span class="built_in">INT</span>&gt;</span><br><span class="line">) PARTITIONED <span class="keyword">BY</span> (country <span class="keyword">STRING</span>, state <span class="keyword">STRING</span>);</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="内部表和外部表">内部表和外部表</h3><ul>
 <li><p>内部表创建</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#<span class="operator"><span class="keyword">create</span> <span class="keyword">table</span> </span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> dcy_test(</span><br><span class="line">kakou <span class="keyword">string</span>,</span><br><span class="line">area  <span class="keyword">string</span>,</span><br><span class="line"><span class="keyword">time</span> <span class="built_in">date</span>,</span><br><span class="line">line <span class="built_in">int</span>,</span><br><span class="line">id <span class="keyword">string</span>,</span><br><span class="line">speed <span class="built_in">int</span>,</span><br><span class="line">color <span class="keyword">string</span>,</span><br><span class="line">kind <span class="built_in">int</span></span><br><span class="line">)</span><br><span class="line"><span class="keyword">row</span> <span class="keyword">format</span> delimited </span><br><span class="line"><span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">','</span></span><br><span class="line">stored <span class="keyword">as</span> textfile;</span></span><br><span class="line">#<span class="operator"><span class="keyword">load</span> <span class="keyword">data</span> <span class="keyword">from</span> <span class="keyword">local</span> </span><br><span class="line"><span class="keyword">load</span> <span class="keyword">data</span> <span class="keyword">local</span> inpath <span class="string">'/home/spark/data/ETLResult.csv'</span> <span class="keyword">into</span> <span class="keyword">table</span> dcy_test</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#<span class="operator"><span class="keyword">create</span> <span class="keyword">table</span> </span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> dcy_test(</span><br><span class="line">kakou <span class="keyword">string</span>,</span><br><span class="line">area  <span class="keyword">string</span>,</span><br><span class="line"><span class="keyword">time</span> <span class="built_in">date</span>,</span><br><span class="line">line <span class="built_in">int</span>,</span><br><span class="line">id <span class="keyword">string</span>,</span><br><span class="line">speed <span class="built_in">int</span>,</span><br><span class="line">color <span class="keyword">string</span>,</span><br><span class="line">kind <span class="built_in">int</span></span><br><span class="line">)</span><br><span class="line"><span class="keyword">row</span> <span class="keyword">format</span> delimited </span><br><span class="line"><span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">','</span></span><br><span class="line">stored <span class="keyword">as</span> textfile;</span></span><br><span class="line">#<span class="operator"><span class="keyword">load</span> <span class="keyword">data</span> <span class="keyword">from</span> <span class="keyword">local</span> </span><br><span class="line"><span class="keyword">load</span> <span class="keyword">data</span> <span class="keyword">local</span> inpath <span class="string">'/home/spark/data/ETLResult.csv'</span> <span class="keyword">into</span> <span class="keyword">table</span> dcy_test</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>外部表创建</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># with the keyword `external`</span><br><span class="line"><span class="operator"><span class="keyword">create</span> <span class="keyword">external</span> <span class="keyword">table</span> dcy_test3(</span><br><span class="line">kakou <span class="keyword">string</span>,</span><br><span class="line">area  <span class="keyword">string</span>,</span><br><span class="line"><span class="keyword">time</span> <span class="keyword">string</span>,</span><br><span class="line">line <span class="built_in">int</span>,</span><br><span class="line">id <span class="keyword">string</span>,</span><br><span class="line">speed <span class="built_in">int</span>,</span><br><span class="line">color <span class="keyword">string</span>,</span><br><span class="line">kind <span class="built_in">int</span></span><br><span class="line">)</span><br><span class="line"><span class="keyword">row</span> <span class="keyword">format</span> delimited </span><br><span class="line"><span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">','</span></span><br><span class="line">stored <span class="keyword">as</span> textfile</span><br><span class="line">location <span class="string">'/extends'</span>;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># with the keyword `external`</span><br><span class="line"><span class="operator"><span class="keyword">create</span> <span class="keyword">external</span> <span class="keyword">table</span> dcy_test3(</span><br><span class="line">kakou <span class="keyword">string</span>,</span><br><span class="line">area  <span class="keyword">string</span>,</span><br><span class="line"><span class="keyword">time</span> <span class="keyword">string</span>,</span><br><span class="line">line <span class="built_in">int</span>,</span><br><span class="line">id <span class="keyword">string</span>,</span><br><span class="line">speed <span class="built_in">int</span>,</span><br><span class="line">color <span class="keyword">string</span>,</span><br><span class="line">kind <span class="built_in">int</span></span><br><span class="line">)</span><br><span class="line"><span class="keyword">row</span> <span class="keyword">format</span> delimited </span><br><span class="line"><span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">','</span></span><br><span class="line">stored <span class="keyword">as</span> textfile</span><br><span class="line">location <span class="string">'/extends'</span>;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>区别</p>
 </li>
@@ -278,10 +278,10 @@
 <p><img src="http://needpp.qiniudn.com/2014/12/28/05695182-8e62-11e4-a385-f23c9156bf7b.png" alt=""></p>
 <h3 id="数据导入导出">数据导入导出</h3><ul>
 <li><p>导入</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#从本地文件导入</span><br><span class="line"><span class="operator"><span class="keyword">load</span> <span class="keyword">data</span> <span class="keyword">local</span> inpath <span class="string">'/home/spark/data/ETLResult.csv'</span> <span class="keyword">into</span> <span class="keyword">table</span> dcy_test3</span><br><span class="line">#从hdfs导入 </span><br><span class="line"><span class="keyword">load</span> <span class="keyword">data</span>  inpath <span class="string">'/home/spark/data/ETLResult.csv'</span> <span class="keyword">into</span> <span class="keyword">table</span> dcy_test3</span><br><span class="line">#从hive表查询方式导入(<span class="keyword">into</span> 或者overwrite 选择一个)</span><br><span class="line"><span class="keyword">insert</span> (<span class="keyword">into</span>/overwrite) <span class="keyword">table</span> destion_table <span class="keyword">select</span> id ,name <span class="keyword">from</span> source_table</span><br><span class="line">#多插入方式</span><br><span class="line"><span class="keyword">from</span> source_table </span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> t1</span><br><span class="line"><span class="keyword">select</span> id ,age</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> t2</span><br><span class="line"><span class="keyword">select</span> age,name </span><br><span class="line">#创建表导入数据</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> t3 <span class="keyword">as</span> <span class="keyword">select</span> id,name <span class="keyword">from</span> source_table</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#从本地文件导入</span><br><span class="line"><span class="operator"><span class="keyword">load</span> <span class="keyword">data</span> <span class="keyword">local</span> inpath <span class="string">'/home/spark/data/ETLResult.csv'</span> <span class="keyword">into</span> <span class="keyword">table</span> dcy_test3</span><br><span class="line">#从hdfs导入 </span><br><span class="line"><span class="keyword">load</span> <span class="keyword">data</span>  inpath <span class="string">'/home/spark/data/ETLResult.csv'</span> <span class="keyword">into</span> <span class="keyword">table</span> dcy_test3</span><br><span class="line">#从hive表查询方式导入(<span class="keyword">into</span> 或者overwrite 选择一个)</span><br><span class="line"><span class="keyword">insert</span> (<span class="keyword">into</span>/overwrite) <span class="keyword">table</span> destion_table <span class="keyword">select</span> id ,name <span class="keyword">from</span> source_table</span><br><span class="line">#多插入方式</span><br><span class="line"><span class="keyword">from</span> source_table </span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> t1</span><br><span class="line"><span class="keyword">select</span> id ,age</span><br><span class="line"><span class="keyword">insert</span> <span class="keyword">into</span> <span class="keyword">table</span> t2</span><br><span class="line"><span class="keyword">select</span> age,name </span><br><span class="line">#创建表导入数据</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> t3 <span class="keyword">as</span> <span class="keyword">select</span> id,name <span class="keyword">from</span> source_table</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>导出</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#导出到本地文件系统</span><br><span class="line"><span class="operator"><span class="keyword">insert</span> overwrite <span class="keyword">local</span> directory <span class="string">'/tmp/data/'</span> <span class="keyword">select</span> * <span class="keyword">from</span> you_table</span><br><span class="line">#导出到hdfs</span><br><span class="line"><span class="keyword">insert</span> overwrite  directory <span class="string">'/tmp/data/'</span> <span class="keyword">select</span> * <span class="keyword">from</span> you_table</span><br><span class="line">#指定分割符号导出</span><br><span class="line"><span class="keyword">insert</span> overwrite <span class="keyword">local</span> directory <span class="string">'/tmp/local'</span></span><br><span class="line"><span class="keyword">row</span> <span class="keyword">format</span> delimited</span><br><span class="line"><span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'\t'</span></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> you_table;</span></span><br><span class="line">#使用sql导出 在终端输入 不用进入hive shell</span><br><span class="line">hive -e "<span class="operator"><span class="keyword">select</span> * <span class="keyword">from</span> wyp<span class="string">" &gt;&gt; data/data3.txt</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">#导出到本地文件系统</span><br><span class="line"><span class="operator"><span class="keyword">insert</span> overwrite <span class="keyword">local</span> directory <span class="string">'/tmp/data/'</span> <span class="keyword">select</span> * <span class="keyword">from</span> you_table</span><br><span class="line">#导出到hdfs</span><br><span class="line"><span class="keyword">insert</span> overwrite  directory <span class="string">'/tmp/data/'</span> <span class="keyword">select</span> * <span class="keyword">from</span> you_table</span><br><span class="line">#指定分割符号导出</span><br><span class="line"><span class="keyword">insert</span> overwrite <span class="keyword">local</span> directory <span class="string">'/tmp/local'</span></span><br><span class="line"><span class="keyword">row</span> <span class="keyword">format</span> delimited</span><br><span class="line"><span class="keyword">fields</span> <span class="keyword">terminated</span> <span class="keyword">by</span> <span class="string">'\t'</span></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> you_table;</span></span><br><span class="line">#使用sql导出 在终端输入 不用进入hive shell</span><br><span class="line">hive -e "<span class="operator"><span class="keyword">select</span> * <span class="keyword">from</span> wyp<span class="string">" &gt;&gt; data/data3.txt</span></span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="数据模型">数据模型</h3><p>Hive中主要包含以下几种数据模型：Table（表），External Table（外部表），Partition（分区），Bucket（桶）<br>1、表：Hive中的表和关系型数据库中的表在概念上很类似，每个表在HDFS中都有相应的目录用来存储表的数据，这个目录可以通过${HIVE_HOME}/conf/hive-site.xml配置文件中的hive.metastore.warehouse.dir属性来配置，这个属性默认的值是/user/hive/warehouse（这个目录在HDFS上），我们可以根据实际的情况来修改这个配置。如果我有一个表wyp，那么在HDFS中会创建/user/hive/warehouse/wyp目录（这里假定hive.metastore.warehouse.dir配置为/user/hive/warehouse）；wyp表所有的数据都存放在这个目录中。这个例外是外部表。<br>2、外部表：Hive中的外部表和表很类似，但是其数据不是放在自己表所属的目录中，而是存放到别处，这样的好处是如果你要删除这个外部表，该外部表所指向的数据是不会被删除的，它只会删除外部表对应的元数据；而如果你要删除表，该表对应的所有数据包括元数据都会被删除。</p>
@@ -296,18 +296,18 @@
     
 <nav id="article-nav">
   
-    <a href="/2014/12/28/配置hadoop2.x 伪分布式集群/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2014/12/29/temp/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          配置hadoop2.x 伪分布式集群
+          temp
         
       </div>
     </a>
   
   
-    <a href="/2014/12/28/Hive use mysql as meta db/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hive use mysql as meta db</div>
+    <a href="/2014/12/28/windows with ubuntu/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">windows with ubuntu</div>
       <strong class="article-nav-caption">></strong>
     </a>
   

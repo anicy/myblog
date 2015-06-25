@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="网络Ubuntu Linux配置文件是：/etc/network/interfaces,打开后里面可设置DHCP或手动设置静态ip。auto eth0，意思是让网卡开机自动挂载。
 以DHCP方式配置网卡
-编辑文件/etc/network/interfaces：123456789sudo vi /etc/network/interfaces并用下面的行来替换有关eth0的行：# The primar">
+编辑文件/etc/network/interfaces：sudo vi /etc/network/interfaces并用下面的行来替换有关eth0的行：# The primary network">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu  配置 动态静态ip">
 <meta property="og:url" content="http://needpp.com/2015/01/13/Ubuntu  配置 动态静态ip/index.html">
 <meta property="og:site_name" content="Thinkml's blog">
 <meta property="og:description" content="网络Ubuntu Linux配置文件是：/etc/network/interfaces,打开后里面可设置DHCP或手动设置静态ip。auto eth0，意思是让网卡开机自动挂载。
 以DHCP方式配置网卡
-编辑文件/etc/network/interfaces：123456789sudo vi /etc/network/interfaces并用下面的行来替换有关eth0的行：# The primar">
+编辑文件/etc/network/interfaces：sudo vi /etc/network/interfaces并用下面的行来替换有关eth0的行：# The primary network">
 <meta property="og:updated_time" content="2015-06-25T01:10:06.796Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu  配置 动态静态ip">
 <meta name="twitter:description" content="网络Ubuntu Linux配置文件是：/etc/network/interfaces,打开后里面可设置DHCP或手动设置静态ip。auto eth0，意思是让网卡开机自动挂载。
 以DHCP方式配置网卡
-编辑文件/etc/network/interfaces：123456789sudo vi /etc/network/interfaces并用下面的行来替换有关eth0的行：# The primar">
+编辑文件/etc/network/interfaces：sudo vi /etc/network/interfaces并用下面的行来替换有关eth0的行：# The primary network">
   
     <link rel="alternative" href="/atom.xml" title="Thinkml&#39;s blog" type="application/atom+xml">
   
@@ -101,7 +101,7 @@
 				        
 							<li><a href="/archives">所有文章</a></li>
 				        
-							<li><a href="/tags/随笔">随笔</a></li>
+							<li><a href="/tags/life">随笔</a></li>
 				        
 						</ul>
 					</nav>
@@ -140,7 +140,7 @@
 				
 				<section class="switch-part switch-part4">
 				
-					<div id="js-aboutme">爱分享，爱折腾...</div>
+					<div id="js-aboutme">奔跑的蚂蚁，爱分享，爱折腾...</div>
 				</section>
 				
 			</div>
@@ -172,7 +172,7 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
-					<li><a href="/tags/随笔">随笔</a></li>
+					<li><a href="/tags/life">随笔</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -230,21 +230,21 @@
       
         <p>网络Ubuntu Linux配置文件是：/etc/network/interfaces,打开后里面可设置DHCP或手动设置静态ip。auto eth0，意思是让网卡开机自动挂载。</p>
 <h3 id="以DHCP方式配置网卡">以DHCP方式配置网卡</h3><ul>
-<li>编辑文件/etc/network/interfaces：<figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/network/interfaces</span><br><span class="line">并用下面的行来替换有关eth0的行：</span><br><span class="line"># The primary network <span class="keyword">interface</span> - <span class="keyword">use</span> DHCP <span class="keyword">to</span> find our address</span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet dhcp</span><br><span class="line">用下面的命令使网络设置生效：</span><br><span class="line">sudo /etc/init.d/networking restart</span><br><span class="line">也可以在命令行下直接输入下面的命令来获取地址</span><br><span class="line">sudo dhclient eth0</span><br></pre></td></tr></table></figure>
+<li>编辑文件/etc/network/interfaces：<figure class="highlight fsharp"><table><tr><td class="code"><pre><span class="line">sudo vi /etc/network/interfaces</span><br><span class="line">并用下面的行来替换有关eth0的行：</span><br><span class="line"># The primary network <span class="keyword">interface</span> - <span class="keyword">use</span> DHCP <span class="keyword">to</span> find our address</span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet dhcp</span><br><span class="line">用下面的命令使网络设置生效：</span><br><span class="line">sudo /etc/init.d/networking restart</span><br><span class="line">也可以在命令行下直接输入下面的命令来获取地址</span><br><span class="line">sudo dhclient eth0</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="为网卡配置静态IP地址">为网卡配置静态IP地址</h3><ul>
 <li><p>编辑文件/etc/network/interfaces：</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">sudo</span> vi /etc/network/interfaces</span><br><span class="line">并用下面的行来替换有关eth0的行：</span><br><span class="line"><span class="comment"># The primary network interface</span></span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet static</span><br><span class="line">address <span class="number">192.168.2.1</span></span><br><span class="line">gateway <span class="number">192.168.2.254</span></span><br><span class="line">netmask <span class="number">255.255.255.0</span></span><br><span class="line"><span class="comment">#network 192.168.2.0</span></span><br><span class="line"><span class="comment">#broadcast 192.168.2.255</span></span><br><span class="line">将上面的ip地址等信息换成你自己就可以了.用下面的命令使网络设置生效：</span><br><span class="line">sudo /etc/init.d/networking restart</span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="title">sudo</span> vi /etc/network/interfaces</span><br><span class="line">并用下面的行来替换有关eth0的行：</span><br><span class="line"><span class="comment"># The primary network interface</span></span><br><span class="line">auto eth0</span><br><span class="line">iface eth0 inet static</span><br><span class="line">address <span class="number">192.168.2.1</span></span><br><span class="line">gateway <span class="number">192.168.2.254</span></span><br><span class="line">netmask <span class="number">255.255.255.0</span></span><br><span class="line"><span class="comment">#network 192.168.2.0</span></span><br><span class="line"><span class="comment">#broadcast 192.168.2.255</span></span><br><span class="line">将上面的ip地址等信息换成你自己就可以了.用下面的命令使网络设置生效：</span><br><span class="line">sudo /etc/init.d/networking restart</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>设置主机名称(hostname)[可选]</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">使用下面的命令来查看当前主机的主机名称：</span><br><span class="line">sudo <span class="regexp">/bin/</span>hostname</span><br><span class="line">使用下面的命令来设置当前主机的主机名称：</span><br><span class="line">sudo <span class="regexp">/bin/</span>hostname newname</span><br><span class="line">系统启动时,它会从<span class="regexp">/etc/</span>hostname来读取主机的名称。</span><br></pre></td></tr></table></figure>
+<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">使用下面的命令来查看当前主机的主机名称：</span><br><span class="line">sudo <span class="regexp">/bin/</span>hostname</span><br><span class="line">使用下面的命令来设置当前主机的主机名称：</span><br><span class="line">sudo <span class="regexp">/bin/</span>hostname newname</span><br><span class="line">系统启动时,它会从<span class="regexp">/etc/</span>hostname来读取主机的名称。</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Ubuntu Linux配置DNS</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#编辑/etc/resolv.conf</span></span><br><span class="line"><span class="title">nameserver</span> <span class="number">192.168.2.2</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="comment">#编辑/etc/resolv.conf</span></span><br><span class="line"><span class="title">nameserver</span> <span class="number">192.168.2.2</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>手动重启网络服务：</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="regexp">/etc/i</span>nit.d<span class="regexp">/networking restart</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">sudo <span class="regexp">/etc/i</span>nit.d<span class="regexp">/networking restart</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="参考">参考</h3><p><a href="http://www.cnblogs.com/empire/archive/2011/01/10/1931877.html" target="_blank" rel="external">http://www.cnblogs.com/empire/archive/2011/01/10/1931877.html</a></p>

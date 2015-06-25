@@ -8,13 +8,13 @@
   <meta name="description" content="最近需要对车辆数据进行分析统计，小学Ｒ一下，ubuntu仓库所带Ｒ版本过低，进行时间序列分析的包无法正常安装，顾自编译。记录如下，仅作备忘。
 
 解压
-1tar -zvxf R-3.1.2.tar.gz
+tar -zvxf R-3.1.2.tar.gz
 
 安装必要工具包
-1sudo apt-get install build-essential gfortran  libreadline6-dev   libxt-dev
+sudo apt-get install build-essential gfortran  libreadline6-dev   libxt-dev
 
 配置安装选项
-12./c">
+./confi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu 编译安装Ｒ">
 <meta property="og:url" content="http://needpp.com/2015/01/11/Ubuntu 编译安装Ｒ/index.html">
@@ -22,13 +22,13 @@
 <meta property="og:description" content="最近需要对车辆数据进行分析统计，小学Ｒ一下，ubuntu仓库所带Ｒ版本过低，进行时间序列分析的包无法正常安装，顾自编译。记录如下，仅作备忘。
 
 解压
-1tar -zvxf R-3.1.2.tar.gz
+tar -zvxf R-3.1.2.tar.gz
 
 安装必要工具包
-1sudo apt-get install build-essential gfortran  libreadline6-dev   libxt-dev
+sudo apt-get install build-essential gfortran  libreadline6-dev   libxt-dev
 
 配置安装选项
-12./c">
+./confi">
 <meta property="og:image" content="http://needpp.qiniudn.com/2015/01/11/a1e9cd76-9947-11e4-a385-f23c9156bf7b.png">
 <meta property="og:updated_time" content="2015-06-25T01:10:06.800Z">
 <meta name="twitter:card" content="summary">
@@ -36,13 +36,13 @@
 <meta name="twitter:description" content="最近需要对车辆数据进行分析统计，小学Ｒ一下，ubuntu仓库所带Ｒ版本过低，进行时间序列分析的包无法正常安装，顾自编译。记录如下，仅作备忘。
 
 解压
-1tar -zvxf R-3.1.2.tar.gz
+tar -zvxf R-3.1.2.tar.gz
 
 安装必要工具包
-1sudo apt-get install build-essential gfortran  libreadline6-dev   libxt-dev
+sudo apt-get install build-essential gfortran  libreadline6-dev   libxt-dev
 
 配置安装选项
-12./c">
+./confi">
   
     <link rel="alternative" href="/atom.xml" title="Thinkml&#39;s blog" type="application/atom+xml">
   
@@ -123,7 +123,7 @@
 				        
 							<li><a href="/archives">所有文章</a></li>
 				        
-							<li><a href="/tags/随笔">随笔</a></li>
+							<li><a href="/tags/life">随笔</a></li>
 				        
 						</ul>
 					</nav>
@@ -162,7 +162,7 @@
 				
 				<section class="switch-part switch-part4">
 				
-					<div id="js-aboutme">爱分享，爱折腾...</div>
+					<div id="js-aboutme">奔跑的蚂蚁，爱分享，爱折腾...</div>
 				</section>
 				
 			</div>
@@ -194,7 +194,7 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
-					<li><a href="/tags/随笔">随笔</a></li>
+					<li><a href="/tags/life">随笔</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -253,16 +253,16 @@
         <p>最近需要对车辆数据进行分析统计，小学Ｒ一下，ubuntu仓库所带Ｒ版本过低，进行时间序列分析的包无法正常安装，顾自编译。记录如下，仅作备忘。</p>
 <ul>
 <li><p>解压</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">tar</span> <span class="tag">-zvxf</span> <span class="tag">R-3</span><span class="class">.1</span><span class="class">.2</span><span class="class">.tar</span><span class="class">.gz</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="tag">tar</span> <span class="tag">-zvxf</span> <span class="tag">R-3</span><span class="class">.1</span><span class="class">.2</span><span class="class">.tar</span><span class="class">.gz</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>安装必要工具包</p>
-<figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install build-essential gfortran  libreadline6-<span class="built_in">dev</span>   libxt-<span class="built_in">dev</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight q"><table><tr><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install build-essential gfortran  libreadline6-<span class="built_in">dev</span>   libxt-<span class="built_in">dev</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>配置安装选项</p>
-<figure class="highlight puppet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=/<span class="literal">home</span>/spark/soft/<span class="constant">R</span> --<span class="literal">enable</span>-<span class="constant">R</span>-shlib</span><br><span class="line">　　注意prefix参数可以设置<span class="constant">R</span>将要安装的路径，<span class="literal">enable</span>-<span class="constant">R</span>-shlib可以保证lib目录下的动态库能够共享，这个选项一定不要忘记添加，否则以后安装某些包的时候会出现<span class="constant">Error</span> <span class="keyword">in</span> dyn.load的错误。</span><br></pre></td></tr></table></figure>
+<figure class="highlight puppet"><table><tr><td class="code"><pre><span class="line">./configure --prefix=/<span class="literal">home</span>/spark/soft/<span class="constant">R</span> --<span class="literal">enable</span>-<span class="constant">R</span>-shlib</span><br><span class="line">　　注意prefix参数可以设置<span class="constant">R</span>将要安装的路径，<span class="literal">enable</span>-<span class="constant">R</span>-shlib可以保证lib目录下的动态库能够共享，这个选项一定不要忘记添加，否则以后安装某些包的时候会出现<span class="constant">Error</span> <span class="keyword">in</span> dyn.load的错误。</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>编译</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">make</span> -j <span class="number">4</span>   #可以单独使用 <span class="built_in">make</span> 这里指定了使用四个线程进行编译</span><br><span class="line"><span class="built_in">make</span> install</span><br></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="built_in">make</span> -j <span class="number">4</span>   #可以单独使用 <span class="built_in">make</span> 这里指定了使用四个线程进行编译</span><br><span class="line"><span class="built_in">make</span> install</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Rstudio<br>至此，Ｒ安装完毕，不习惯使用命令行的方式可以添加一个界面，Rstudio.</p>
 </li>

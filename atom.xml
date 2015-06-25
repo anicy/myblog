@@ -50,9 +50,11 @@
     <link href="http://needpp.com/2015/06/08/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     <id>http://needpp.com/2015/06/08/科学上网/</id>
     <published>2015-06-07T16:00:00.000Z</published>
-    <updated>2015-06-25T07:17:42.735Z</updated>
+    <updated>2015-06-25T07:33:14.930Z</updated>
     <content type="html"><![CDATA[<p>优选服务器:<br>(自动优选, 不定期更换, 请使用域名为服务器地址.)<br>IPv4: auto.v4.omicronplus.com<br>IPv6: auto.v6.omicronplus.com<br>加密方法: aes-256-cfb<br>端口: 4000<br>密码: <em>**</em></p>
 <p>欧洲服务器-1:<br>IPv4: eu1.v4.omicronplus.com<br>IPv6: eu1.v6.omicronplus.com<br>加密方法: aes-256-cfb<br>端口: 4000<br>密码: <em>**</em></p>
+<p>使用指南</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">sslocal -s <span class="attribute">auto</span><span class="class">.v4</span><span class="class">.omicronplus</span><span class="class">.com</span> -<span class="tag">p</span> <span class="number">4000</span> -k pwd</span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>优选服务器:<br>(自动优选, 不定期更换, 请使用域名为服务器地址.)<br>IPv4: auto.v4.omicronplus.com<br>IPv6: auto.v6.omicronplus.com<br>加密方法: aes-256-cfb<br>端口: 4000<]]>

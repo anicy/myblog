@@ -195,12 +195,14 @@
     <link href="http://needpp.com/2015/04/27/pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/"/>
     <id>http://needpp.com/2015/04/27/pandas数据操作/</id>
     <published>2015-04-26T16:00:00.000Z</published>
-    <updated>2015-06-25T05:42:21.254Z</updated>
+    <updated>2015-06-26T04:00:42.776Z</updated>
     <content type="html"><![CDATA[<h2 id="Pandas_数据处理">Pandas 数据处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">imort pandas <span class="keyword">as</span> pd</span><br><span class="line">生成随机数</span><br><span class="line">s=np.random.randint (<span class="number">0</span>,<span class="number">15951</span>,<span class="number">5000</span>)</span><br><span class="line">讲dataframe的数据写入csv文件</span><br><span class="line">dtest.to_csv (<span class="string">"test.csv"</span>,index=<span class="keyword">False</span>)</span><br><span class="line">读取csv文件到dataframe</span><br><span class="line">test=pd.read_csv(<span class="string">"test_format1.csv"</span>)</span><br><span class="line">添加一列</span><br><span class="line">c[<span class="string">'lable'</span>]=e</span><br><span class="line">删除一列</span><br><span class="line">dtest=d.drop([<span class="string">'prob'</span>],axis=<span class="number">1</span>)</span><br><span class="line">join操作</span><br><span class="line">d=pd.merge (test,b,on=[<span class="string">'user_id'</span>,<span class="string">'merchant_id'</span>])</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="code">code</h3><figure class="highlight nix"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">import</span> pandas as pd</span><br><span class="line">from sklearn <span class="built_in">import</span> linear_model</span><br><span class="line">from sklearn <span class="built_in">import</span> cross_validation</span><br><span class="line"></span><br><span class="line">from sklearn.externals <span class="built_in">import</span> joblib</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="variable">__name__=</span>=<span class="string">"__main__"</span>:</span><br><span class="line">    <span class="variable">data=</span>pd.read_csv(<span class="string">"/home/spark/data/2015/data_format1/train.csv"</span>)</span><br><span class="line">    <span class="comment">#test=np.loadtxt("/tmp/test.txt",delimiter="\t",dtype=np.int32)</span></span><br><span class="line">    <span class="variable">X=</span>data.iloc[:,<span class="number">0</span>:-<span class="number">1</span>]</span><br><span class="line">    <span class="variable">target=</span>data['lable']</span><br><span class="line">    </span><br><span class="line">    <span class="variable">test=</span>pd.read_csv(<span class="string">"/home/spark/data/2015/data_format1/test.csv"</span>)</span><br><span class="line"> </span><br><span class="line">    </span><br><span class="line">    X_train,X_test,y_train,<span class="variable">y_test=</span>cross_validation.train_test_split(X,target,<span class="variable">test_size=</span><span class="number">0.1</span>,<span class="variable">random_state=</span><span class="number">1</span>)</span><br><span class="line">    </span><br><span class="line">    print(<span class="string">"begin fit the model...."</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="variable">clf=</span>linear_model.LogisticRegression(<span class="variable">penalty=</span>'l2', <span class="variable">dual=</span>False, <span class="variable">tol=</span><span class="number">0.0001</span>, <span class="variable">C=</span><span class="number">1.0</span>, <span class="variable">fit_intercept=</span>True, <span class="variable">intercept_scaling=</span><span class="number">1</span>, <span class="variable">class_weight=</span>None, <span class="variable">random_state=</span>None)</span><br><span class="line">    clf.fit(X,target)</span><br><span class="line">    </span><br><span class="line">    print(<span class="string">"the model have train success, we will save the model to file..."</span>)</span><br><span class="line"></span><br><span class="line">    <span class="variable">p=</span>clf.predict_proba(test)</span><br><span class="line">    </span><br><span class="line">    <span class="variable">reslut=</span>test.drop(['a','b','c','d'],<span class="variable">axis=</span><span class="number">1</span>)</span><br><span class="line">    reslut['prob']=p[:,<span class="number">1</span>]</span><br><span class="line">    </span><br><span class="line">    reslut.to_csv(<span class="string">"/home/spark/data/2015/data_format1/predict.csv"</span>,<span class="variable">index=</span>False)</span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="Pandas_数据处理">Pandas 数据处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keywo]]>
+    <![CDATA[<h2 id="Pandas_数据处理">Pandas 数据处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">imort pandas <span class="keyword">as</span> pd</span><br><span class="line">生成随机数</span><br><span class="line">s=np.random.randint (<span class="number">0</span>,<span class="number">15951</span>,<span class="number">5000</span>)</span><br><span class="line">讲dataframe的数据写入csv文件</span><br><span class="line">dtest.to_csv (<span class="string">"test.csv"</span>,index=<span class="keyword">False</span>)</span><br><span class="line">读取csv文件到dataframe</span><br><span class="line">test=pd.read_csv(<span class="string">"test_format1.csv"</span>)</span><br><span class="line">添加一列</span><br><span class="line">c[<span class="string">'lable'</span>]=e</span><br><span class="line">删除一列</span><br><span class="line">dtest=d.drop([<span class="string">'prob'</span>],axis=<span class="number">1</span>)</span><br><span class="line">join操作</span><br><span class="line">d=pd.merge (test,b,on=[<span class="string">'user_id'</span>,<span class="string">'merchant_id'</span>])</span><br></pre></td></tr></table></figure>]]>
+    
     </summary>
     
       <category term="pandas" scheme="http://needpp.com/tags/pandas/"/>
@@ -251,7 +253,7 @@
     <link href="http://needpp.com/2015/03/25/Resume/"/>
     <id>http://needpp.com/2015/03/25/Resume/</id>
     <published>2015-03-24T16:00:00.000Z</published>
-    <updated>2015-06-25T06:48:14.215Z</updated>
+    <updated>2015-06-26T04:00:55.332Z</updated>
     <content type="html"><![CDATA[<h1 id="个人信息">个人信息</h1><ul>
 <li>Thinkml/男/1990 </li>
 <li>硕士/华南理工大学计算机</li>
@@ -275,6 +277,7 @@
 <li>了解BootStrap、Ajax、JQuery等前端开发技术。</li>
 <li>了解Git、Cvs等版本控制操作。</li>
 </ul>
+<a id="more"></a>
 <h1 id="项目经历">项目经历</h1><h3 id="2015/4-2015/5_IJCAI-15竞赛_商家开展促销之后重复购买用户的预测">2015/4-2015/5  IJCAI-15竞赛  商家开展促销之后重复购买用户的预测</h3><ul>
 <li>简述：为了吸引更多的买家来购买产品，商家们通常会在特殊节日比如“双11”开展大规模的打折或者发放购物券的促销活动。通常这样吸引过来的用户往往是一锤子买卖，没有过多的用户黏性。本次的任务就是希望通过过去六个月的用户行为数据来预测未来可能会在这个店家再次发生购买行为的用户，从而可以用来指导促销策略，有针对性的针对黏性用户开展促销策略活动，提升ROI。本次竞赛由天猫主办，提供了42w用户在“双11”前六个月的近5500w条商品行为记录。</li>
 <li>职责：导入mysql数据库、清理数据、分析并提取特征。主要使用sql和pandas进行数据处理和特征的生成，使用scikit-learing和graphlab-create进行模型的构建。</li>
@@ -334,7 +337,26 @@
 <li>Thinkml/男/1990 </li>
 <li>硕士/华南理工大学计算机</li>
 <li>工作年限：在读</li>
-<li>关于：本人积极乐观、待人诚恳、敢于担当。对于新鲜事物有着火一般的热情，喜欢尝试，乐于分享]]>
+<li>关于：本人积极乐观、待人诚恳、敢于担当。对于新鲜事物有着火一般的热情，喜欢尝试，乐于分享，热衷于学习新技术、新知识并通过写博客的方式进行记录学习过程中遇到的坑。有过良好的软件开发规范的指导经历,具有良好的团队合作能力及项目文档书写能力。对项目开发流程有着深刻理解，善于与他人沟通、积极进取,有强烈的责任心。</li>
+</ul>
+<h1 id="联系方式">联系方式</h1><ul>
+<li>手机：15626239780</li>
+<li>Email： dcycome@gmail.com</li>
+<li>Blog :  <a href="http://me.needpp.com/">http://me.needpp.com/</a></li>
+</ul>
+<h1 id="技能清单">技能清单</h1><ul>
+<li>熟悉Java和J2EE开发，熟悉Struts/Hibernate/Spring/Mybatis等开源框架。</li>
+<li>熟练使用Myeclipse、Visual Studio、SPSS、Weka等工具。</li>
+<li>熟悉常用机器学习算法原理与应用场景以及统计学相关知识。</li>
+<li>熟悉常用算法与数据结构。</li>
+<li>熟练掌握Mysql、Sql Server操作，有过数据库优化经验。</li>
+<li>熟悉Linux操作，掌握Shell编程熟悉TCP/IP协议相关知识。</li>
+<li>了解C++、Python、R语言。</li>
+<li>了解Hadoop、Spark分布式计算框架。</li>
+<li>了解BootStrap、Ajax、JQuery等前端开发技术。</li>
+<li>了解Git、Cvs等版本控制操作。</li>
+</ul>]]>
+    
     </summary>
     
       <category term="about" scheme="http://needpp.com/tags/about/"/>
@@ -438,7 +460,7 @@
     <link href="http://needpp.com/2015/01/11/Ubuntu%20%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%EF%BC%B2/"/>
     <id>http://needpp.com/2015/01/11/Ubuntu 编译安装Ｒ/</id>
     <published>2015-01-10T16:00:00.000Z</published>
-    <updated>2015-06-25T01:10:06.800Z</updated>
+    <updated>2015-06-26T04:01:05.788Z</updated>
     <content type="html"><![CDATA[<p>最近需要对车辆数据进行分析统计，小学Ｒ一下，ubuntu仓库所带Ｒ版本过低，进行时间序列分析的包无法正常安装，顾自编译。记录如下，仅作备忘。</p>
 <ul>
 <li><p>解压</p>
@@ -453,8 +475,10 @@
 <li><p>编译</p>
 <figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="built_in">make</span> -j <span class="number">4</span>   #可以单独使用 <span class="built_in">make</span> 这里指定了使用四个线程进行编译</span><br><span class="line"><span class="built_in">make</span> install</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>Rstudio<br>至此，Ｒ安装完毕，不习惯使用命令行的方式可以添加一个界面，Rstudio.</p>
-</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li>Rstudio<br>至此，Ｒ安装完毕，不习惯使用命令行的方式可以添加一个界面，Rstudio.</li>
 </ul>
 <p><img src="http://needpp.qiniudn.com/2015/01/11/a1e9cd76-9947-11e4-a385-f23c9156bf7b.png" alt=""></p>
 <h3 id="参考链接">参考链接</h3><p><a href="http://mirrors.xmu.edu.cn/CRAN/" target="_blank" rel="external">http://mirrors.xmu.edu.cn/CRAN/</a><br><a href="http://jliblog.com/archives/368" target="_blank" rel="external">http://jliblog.com/archives/368</a><br><a href="http://www.rstudio.com/products/rstudio/download/" target="_blank" rel="external">http://www.rstudio.com/products/rstudio/download/</a></p>
@@ -463,7 +487,19 @@
     <![CDATA[<p>最近需要对车辆数据进行分析统计，小学Ｒ一下，ubuntu仓库所带Ｒ版本过低，进行时间序列分析的包无法正常安装，顾自编译。记录如下，仅作备忘。</p>
 <ul>
 <li><p>解压</p>
-<figure class="highlight css"><table><tr><t]]>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="tag">tar</span> <span class="tag">-zvxf</span> <span class="tag">R-3</span><span class="class">.1</span><span class="class">.2</span><span class="class">.tar</span><span class="class">.gz</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装必要工具包</p>
+<figure class="highlight q"><table><tr><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install build-essential gfortran  libreadline6-<span class="built_in">dev</span>   libxt-<span class="built_in">dev</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置安装选项</p>
+<figure class="highlight puppet"><table><tr><td class="code"><pre><span class="line">./configure --prefix=/<span class="literal">home</span>/spark/soft/<span class="constant">R</span> --<span class="literal">enable</span>-<span class="constant">R</span>-shlib</span><br><span class="line">　　注意prefix参数可以设置<span class="constant">R</span>将要安装的路径，<span class="literal">enable</span>-<span class="constant">R</span>-shlib可以保证lib目录下的动态库能够共享，这个选项一定不要忘记添加，否则以后安装某些包的时候会出现<span class="constant">Error</span> <span class="keyword">in</span> dyn.load的错误。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编译</p>
+<figure class="highlight go"><table><tr><td class="code"><pre><span class="line"><span class="built_in">make</span> -j <span class="number">4</span>   #可以单独使用 <span class="built_in">make</span> 这里指定了使用四个线程进行编译</span><br><span class="line"><span class="built_in">make</span> install</span><br></pre></td></tr></table></figure>
+</li>
+</ul>]]>
+    
     </summary>
     
       <category term="R" scheme="http://needpp.com/tags/R/"/>
@@ -479,12 +515,13 @@
     <link href="http://needpp.com/2015/01/07/mysql%20%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E3%80%81%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA/"/>
     <id>http://needpp.com/2015/01/07/mysql 远程连接、数据库备份、数据导出/</id>
     <published>2015-01-06T16:00:00.000Z</published>
-    <updated>2015-06-25T01:10:06.800Z</updated>
+    <updated>2015-06-26T04:00:22.696Z</updated>
     <content type="html"><![CDATA[<h3 id="mysql_远程连接、数据库备份、数据导出">mysql 远程连接、数据库备份、数据导出</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="string">'hello'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'hello123'</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">mysql -<span class="keyword">h</span> server_ip  -<span class="keyword">u</span> hello -p  hello123</span><br></pre></td></tr></table></figure>
 <p>error<br><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">ERROR <span class="number">2003</span> (HY000): Can't connect <span class="keyword">to</span> MySQL server <span class="function_start"><span class="keyword">on</span></span> '<span class="number">192.168</span>.1.3' (<span class="number">111</span>)</span><br></pre></td></tr></table></figure></p>
 <p>update my.cnf<br><figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">whereis mysql</span><br><span class="line">## promote</span><br><span class="line">spark<span class="annotation">@spark</span>-<span class="string">desktop:</span>~$ whereis mysql</span><br><span class="line"><span class="string">mysql:</span> <span class="regexp">/usr/</span>bin<span class="regexp">/mysql /</span>etc<span class="regexp">/mysql /</span>usr<span class="regexp">/lib/</span>mysql <span class="regexp">/usr/</span>bin<span class="regexp">/X11/</span>mysql <span class="regexp">/usr/</span>include<span class="regexp">/mysql /</span>usr<span class="regexp">/share/</span>mysql <span class="regexp">/usr/</span>share<span class="regexp">/man/</span>man1/mysql.1.gz</span><br><span class="line">spark<span class="annotation">@spark</span>-<span class="string">desktop:</span>~$</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"># <span class="keyword">find</span> the <span class="keyword">file</span> of my.<span class="keyword">conf</span> <span class="built_in">and</span> <span class="keyword">update</span> it </span><br><span class="line">注释掉这一行，实现全局监听</span><br><span class="line">#bind-address           = <span class="number">127.0</span>.<span class="number">0.1</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>restar mysql<br><figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">sudo <span class="regexp">/etc/i</span>nit.d／mysql restart</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">grant all privileges on *.* to &#39;car&#39;@&#39;%&#39; identified by &#39;car123456&#39;;</span><br></pre></td></tr></table></figure>
 <p>done,good job.</p>
@@ -499,7 +536,12 @@
 <p>ps:每次复制执行的时候总会报错，手动打一次正常，逗我玩吗？　可能中间有某些分割符号隐藏了。。。<br>至此，导入中文，还有小秘密哦。。。哈哈</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h3 id="mysql_远程连接、数据库备份、数据导出">mysql 远程连接、数据库备份、数据导出</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><]]>
+    <![CDATA[<h3 id="mysql_远程连接、数据库备份、数据导出">mysql 远程连接、数据库备份、数据导出</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> <span class="keyword">PRIVILEGES</span> <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="string">'hello'</span>@<span class="string">'%'</span> <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> <span class="string">'hello123'</span> <span class="keyword">WITH</span> <span class="keyword">GRANT</span> <span class="keyword">OPTION</span>;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">mysql -<span class="keyword">h</span> server_ip  -<span class="keyword">u</span> hello -p  hello123</span><br></pre></td></tr></table></figure>
+<p>error<br><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">ERROR <span class="number">2003</span> (HY000): Can't connect <span class="keyword">to</span> MySQL server <span class="function_start"><span class="keyword">on</span></span> '<span class="number">192.168</span>.1.3' (<span class="number">111</span>)</span><br></pre></td></tr></table></figure></p>
+<p>update my.cnf<br><figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">whereis mysql</span><br><span class="line">## promote</span><br><span class="line">spark<span class="annotation">@spark</span>-<span class="string">desktop:</span>~$ whereis mysql</span><br><span class="line"><span class="string">mysql:</span> <span class="regexp">/usr/</span>bin<span class="regexp">/mysql /</span>etc<span class="regexp">/mysql /</span>usr<span class="regexp">/lib/</span>mysql <span class="regexp">/usr/</span>bin<span class="regexp">/X11/</span>mysql <span class="regexp">/usr/</span>include<span class="regexp">/mysql /</span>usr<span class="regexp">/share/</span>mysql <span class="regexp">/usr/</span>share<span class="regexp">/man/</span>man1/mysql.1.gz</span><br><span class="line">spark<span class="annotation">@spark</span>-<span class="string">desktop:</span>~$</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"># <span class="keyword">find</span> the <span class="keyword">file</span> of my.<span class="keyword">conf</span> <span class="built_in">and</span> <span class="keyword">update</span> it </span><br><span class="line">注释掉这一行，实现全局监听</span><br><span class="line">#bind-address           = <span class="number">127.0</span>.<span class="number">0.1</span></span><br></pre></td></tr></table></figure>]]>
+    
     </summary>
     
       <category term="mysql" scheme="http://needpp.com/tags/mysql/"/>

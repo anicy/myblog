@@ -15,7 +15,7 @@ errorERROR 2003 (HY000): Can&apos;t connect to MySQL se">
 <meta property="og:description" content="mysql 远程连接、数据库备份、数据导出GRANT ALL PRIVILEGES ON *.* TO &apos;hello&apos;@&apos;%&apos; IDENTIFIED BY &apos;hello123&apos; WITH GRANT OPTION;
 mysql -h server_ip  -u hello -p  hello123
 errorERROR 2003 (HY000): Can&apos;t connect to MySQL se">
-<meta property="og:updated_time" content="2015-06-25T01:10:06.800Z">
+<meta property="og:updated_time" content="2015-06-26T04:00:22.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql 远程连接、数据库备份、数据导出">
 <meta name="twitter:description" content="mysql 远程连接、数据库备份、数据导出GRANT ALL PRIVILEGES ON *.* TO &apos;hello&apos;@&apos;%&apos; IDENTIFIED BY &apos;hello123&apos; WITH GRANT OPTION;
@@ -224,6 +224,7 @@ errorERROR 2003 (HY000): Can&apos;t connect to MySQL se">
 <p>error<br><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">ERROR <span class="number">2003</span> (HY000): Can't connect <span class="keyword">to</span> MySQL server <span class="function_start"><span class="keyword">on</span></span> '<span class="number">192.168</span>.1.3' (<span class="number">111</span>)</span><br></pre></td></tr></table></figure></p>
 <p>update my.cnf<br><figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">whereis mysql</span><br><span class="line">## promote</span><br><span class="line">spark<span class="annotation">@spark</span>-<span class="string">desktop:</span>~$ whereis mysql</span><br><span class="line"><span class="string">mysql:</span> <span class="regexp">/usr/</span>bin<span class="regexp">/mysql /</span>etc<span class="regexp">/mysql /</span>usr<span class="regexp">/lib/</span>mysql <span class="regexp">/usr/</span>bin<span class="regexp">/X11/</span>mysql <span class="regexp">/usr/</span>include<span class="regexp">/mysql /</span>usr<span class="regexp">/share/</span>mysql <span class="regexp">/usr/</span>share<span class="regexp">/man/</span>man1/mysql.1.gz</span><br><span class="line">spark<span class="annotation">@spark</span>-<span class="string">desktop:</span>~$</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"># <span class="keyword">find</span> the <span class="keyword">file</span> of my.<span class="keyword">conf</span> <span class="built_in">and</span> <span class="keyword">update</span> it </span><br><span class="line">注释掉这一行，实现全局监听</span><br><span class="line">#bind-address           = <span class="number">127.0</span>.<span class="number">0.1</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>restar mysql<br><figure class="highlight gradle"><table><tr><td class="code"><pre><span class="line">sudo <span class="regexp">/etc/i</span>nit.d／mysql restart</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">grant all privileges on *.* to &#39;car&#39;@&#39;%&#39; identified by &#39;car123456&#39;;</span><br></pre></td></tr></table></figure>
 <p>done,good job.</p>

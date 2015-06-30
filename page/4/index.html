@@ -177,10 +177,10 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-Maven编译hadoop2.5.2" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-OpenCV机器学习" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2014/12/28/Maven编译hadoop2.5.2/" class="article-date">
+      <a href="/2014/12/28/OpenCV机器学习/" class="article-date">
   	<time datetime="2014-12-27T16:00:00.000Z" itemprop="datePublished">2014-12-28</time>
 </a>
     </div>
@@ -194,7 +194,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/28/Maven编译hadoop2.5.2/">Maven编译hadoop2.5.2</a>
+      <a class="article-title" href="/2014/12/28/OpenCV机器学习/">OpenCV机器学习</a>
     </h1>
   
 
@@ -203,22 +203,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="准备工具">准备工具</h3><ul>
-<li>jdk安装配置 （使用orace-jdk 6以上，而不是open-jdk）</li>
-<li>maven配置 <code>sudo apt-get install maven</code> ，使用二进制包进行配置更加灵活。</li>
-<li><p>protobuf的安装<br><code>wget https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.gz</code><br>备用链接 <a href="">百度云</a><br>解压安装，记得导入这个变量 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=~/protobuf-<span class="number">2.5</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>ant安装 </p>
-</li>
-<li><p>其他软件安装</p>
-<figure class="highlight q"><table><tr><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> -y install maven build-essential autoconf automake libtool cmake zlib1g-<span class="built_in">dev</span> pkg-config libssl-<span class="built_in">dev</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>编译命令<br>进入到hadoop-src目录进行编译</p>
-<figure class="highlight aspectj"><table><tr><td class="code"><pre><span class="line">mvn <span class="keyword">package</span> -Pdist,<span class="keyword">native</span> -DskipTests -Dtar</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>耐心等待。。。。<br>
+        <h3 id="环境搭建">环境搭建</h3><p>首先本机安装opencv，没有安装也可以copy对应的opencv_java249.dll也可以<br>安装opencv之后会有对应的opencv-249.jar文件以及对应的dll文件，需要引入到工程中。如图所示。</p>
+<p><img src="http://needpp.qiniudn.com/2014/12/28/4ceb8482-8e60-11e4-a385-f23c9156bf7b.png" alt=""></p>
+<p>尤其需要注意的是dll文件的引用，在buildpath下配置</p>
+<p><img src="http://needpp.qiniudn.com/2014/12/28/4d2c1c4a-8e60-11e4-a385-f23c9156bf7b.png" alt=""></p>
+<p>为了使用的方便我这里把dll文件一起打包到工程中，使用相对路径引用这个dll文件，至此配置完成。<br>下面进行验证，如果这个代码运行完成没有报错的话说明opencv的环境已经配置好可以进行下面的开发了。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> edu.dcy.opencv;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.Core;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.CvType;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.Mat;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span><br><span class="line"></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">( String[] args )</span></span><br><span class="line">   </span>&#123;</span><br><span class="line">      System.loadLibrary( Core.NATIVE_LIBRARY_NAME );</span><br><span class="line">      Mat mat = Mat.eye( <span class="number">8</span>, <span class="number">8</span>, CvType.CV_8UC1 );</span><br><span class="line">      System.out.println(  mat.dump() );</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="机器学习">机器学习</h3><p>之前使用vs2010一直没有正式完成过ml，原因是没有生成正确的训练集合，今天重拾这个玩意儿，总算搞定，再次记录一下。</p>
+<p>机器学习分为很多阶，这里除开数据预处理之类的，直接从构建训练数据，对数据进行训练，然后测试这么个过程，体验下opencv对图像进行机器学习的过程。<br>
       
     </div>
     
@@ -226,14 +218,14 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/">maven</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ml/">ml</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/opencv/">opencv</a></li></ul>
 	</div>
 
       
 
       
         <p class="article-more-link">
-          <a  href="/2014/12/28/Maven编译hadoop2.5.2/#more">more >></a>
+          <a  href="/2014/12/28/OpenCV机器学习/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>

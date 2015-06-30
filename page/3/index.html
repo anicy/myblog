@@ -177,6 +177,61 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-maven settings" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/05/maven settings/" class="article-date">
+  	<time datetime="2015-01-04T16:00:00.000Z" itemprop="datePublished">2015-01-05</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/05/maven settings/">maven settings</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="pi">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span><br><span class="line">Licensed to the Apache Software Foundation (ASF) under one</span><br><span class="line">or more contributor license agreements.  See the NOTICE file</span><br><span class="line">distributed with this work for additional information</span><br><span class="line">regarding copyright ownership.  The ASF licenses this file</span><br><span class="line">to you under the Apache License, Version 2.0 (the</span><br><span class="line">"License"); you may not use this file except in compliance</span><br><span class="line">with the License.  You may obtain a copy of the License at</span><br><span class="line"></span><br><span class="line">    http://www.apache.org/licenses/LICENSE-2.0</span><br><span class="line"></span><br><span class="line">Unless required by applicable law or agreed to in writing,</span><br><span class="line">software distributed under the License is distributed on an</span><br><span class="line">"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY</span><br><span class="line">KIND, either express or implied.  See the License for the</span><br><span class="line">specific language governing permissions and limitations</span><br><span class="line">under the License.</span><br><span class="line">--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--</span><br><span class="line"> | This is the configuration file for Maven. It can be specified at two levels:</span><br><span class="line"> |</span><br><span class="line"> |  1. User Level. This settings.xml file provides configuration for a single user, </span><br><span class="line"> |                 and is normally provided in $&#123;user.home&#125;/.m2/settings.xml.</span><br><span class="line"> |</span><br><span class="line"> |                 <span class="doctag"><span class="keyword">NOTE</span></span>: This location can be overridden with the CLI option:</span><br><span class="line"> |</span><br><span class="line"> |                 -s /path/to/user/settings.xml</span><br><span class="line"> |</span><br><span class="line"> |  2. Global Level. This settings.xml file provides configuration for all Maven</span><br><span class="line"> |                 users on a machine (assuming they're all using the same Maven</span><br><span class="line"> |                 installation). It's normally provided in </span><br><span class="line"> |                 $&#123;maven.home&#125;/conf/settings.xml.</span><br><span class="line"> |</span><br><span class="line"> |                 <span class="doctag"><span class="keyword">NOTE</span></span>: This location can be overridden with the CLI option:</span><br><span class="line"> |</span><br><span class="line"> |                 -gs /path/to/global/settings.xml</span><br><span class="line"> |</span><br><span class="line"> | The sections in this sample file are intended to give you a running start at</span><br><span class="line"> | getting the most out of your Maven installation. Where appropriate, the default</span><br><span class="line"> | values (values used when the setting is not specified) are provided.</span><br><span class="line"> |</span><br><span class="line"> |--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">settings</span> <span class="attribute">xmlns</span>=<span class="value">"http://maven.apache.org/SETTINGS/1.0.0"</span> </span><br><span class="line">          <span class="attribute">xmlns:xsi</span>=<span class="value">"http://www.w3.org/2001/XMLSchema-instance"</span> </span><br><span class="line">          <span class="attribute">xsi:schemaLocation</span>=<span class="value">"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- localRepository</span><br><span class="line">   | The path to the local repository maven will use to store artifacts.</span><br><span class="line">   |</span><br><span class="line">   | Default: $&#123;user.home&#125;/.m2/repository</span><br><span class="line">  &lt;localRepository&gt;/path/to/local/repo&lt;/localRepository&gt;</span><br><span class="line">  --&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- interactiveMode</span><br><span class="line">   | This will determine whether maven prompts you when it needs input. If set to false,</span><br><span class="line">   | maven will use a sensible default value, perhaps based on some other setting, for</span><br><span class="line">   | the parameter in question.</span><br><span class="line">   |</span><br><span class="line">   | Default: true</span><br><span class="line">  &lt;interactiveMode&gt;true&lt;/interactiveMode&gt;</span><br><span class="line">  --&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- offline</span><br><span class="line">   | Determines whether maven should attempt to connect to the network when executing a build.</span><br><span class="line">   | This will have an effect on artifact downloads, artifact deployment, and others.</span><br><span class="line">   |</span><br><span class="line">   | Default: false</span><br><span class="line">  &lt;offline&gt;false&lt;/offline&gt;</span><br><span class="line">  --&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- pluginGroups</span><br><span class="line">   | This is a list of additional group identifiers that will be searched when resolving plugins by their prefix, i.e.</span><br><span class="line">   | when invoking a command line like "mvn prefix:goal". Maven will automatically add the group identifiers</span><br><span class="line">   | "org.apache.maven.plugins" and "org.codehaus.mojo" if these are not already contained in the list.</span><br><span class="line">   |--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">pluginGroups</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- pluginGroup</span><br><span class="line">     | Specifies a further group identifier to use for plugin lookup.</span><br><span class="line">    &lt;pluginGroup&gt;com.your.plugins&lt;/pluginGroup&gt;</span><br><span class="line">    --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">pluginGroups</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- proxies</span><br><span class="line">   | This is a list of proxies which can be used on this machine to connect to the network.</span><br><span class="line">   | Unless otherwise specified (by system property or command-line switch), the first proxy</span><br><span class="line">   | specification in this list marked as active will be used.</span><br><span class="line">   |--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">proxies</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- proxy</span><br><span class="line">     | Specification for one proxy, to be used in connecting to the network.</span><br><span class="line">     |</span><br><span class="line">    &lt;proxy&gt;</span><br><span class="line">      &lt;id&gt;optional&lt;/id&gt;</span><br><span class="line">      &lt;active&gt;true&lt;/active&gt;</span><br><span class="line">      &lt;protocol&gt;http&lt;/protocol&gt;</span><br><span class="line">      &lt;username&gt;proxyuser&lt;/username&gt;</span><br><span class="line">      &lt;password&gt;proxypass&lt;/password&gt;</span><br><span class="line">      &lt;host&gt;proxy.host.net&lt;/host&gt;</span><br><span class="line">      &lt;port&gt;80&lt;/port&gt;</span><br><span class="line">      &lt;nonProxyHosts&gt;local.net|some.host.com&lt;/nonProxyHosts&gt;</span><br><span class="line">    &lt;/proxy&gt;</span><br><span class="line">    --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">proxies</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- servers</span><br><span class="line">   | This is a list of authentication profiles, keyed by the server-id used within the system.</span><br><span class="line">   | Authentication profiles can be used whenever maven must make a connection to a remote server.</span><br><span class="line">   |--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">servers</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- server</span><br><span class="line">     | Specifies the authentication information to use when connecting to a particular server, identified by</span><br><span class="line">     | a unique name within the system (referred to by the 'id' attribute below).</span><br><span class="line">     | </span><br><span class="line">     | <span class="doctag"><span class="keyword">NOTE</span></span>: You should either specify username/password OR privateKey/passphrase, since these pairings are </span><br><span class="line">     |       used together.</span><br><span class="line">     |</span><br><span class="line">    &lt;server&gt;</span><br><span class="line">      &lt;id&gt;deploymentRepo&lt;/id&gt;</span><br><span class="line">      &lt;username&gt;repouser&lt;/username&gt;</span><br><span class="line">      &lt;password&gt;repopwd&lt;/password&gt;</span><br><span class="line">    &lt;/server&gt;</span><br><span class="line">    --&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">&lt;!-- Another sample, using keys to authenticate.</span><br><span class="line">    &lt;server&gt;</span><br><span class="line">      &lt;id&gt;siteServer&lt;/id&gt;</span><br><span class="line">      &lt;privateKey&gt;/path/to/private/key&lt;/privateKey&gt;</span><br><span class="line">      &lt;passphrase&gt;optional; leave empty if not used.&lt;/passphrase&gt;</span><br><span class="line">    &lt;/server&gt;</span><br><span class="line">    --&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">servers</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- mirrors</span><br><span class="line">   | This is a list of mirrors to be used in downloading artifacts from remote repositories.</span><br><span class="line">   | </span><br><span class="line">   | It works like this: a POM may declare a repository to use in resolving certain artifacts.</span><br><span class="line">   | However, this repository may have problems with heavy traffic at times, so people have mirrored</span><br><span class="line">   | it to several places.</span><br><span class="line">   |</span><br><span class="line">   | That repository definition will have a unique id, so we can create a mirror reference for that</span><br><span class="line">   | repository, to be used as an alternate download site. The mirror site will be the preferred </span><br><span class="line">   | server for that repository.</span><br><span class="line">   |--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">mirrors</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- mirror</span><br><span class="line">     | Specifies a repository mirror site to use instead of a given repository. The repository that</span><br><span class="line">     | this mirror serves has an ID that matches the mirrorOf element of this mirror. IDs are used</span><br><span class="line">     | for inheritance and direct lookup purposes, and must be unique across the set of mirrors.</span><br><span class="line">     |</span><br><span class="line">    &lt;mirror&gt;</span><br><span class="line">      &lt;id&gt;mirrorId&lt;/id&gt;</span><br><span class="line">      &lt;mirrorOf&gt;repositoryId&lt;/mirrorOf&gt;</span><br><span class="line">      &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;</span><br><span class="line">      &lt;url&gt;http://my.repository.com/repo/path&lt;/url&gt;</span><br><span class="line">    &lt;/mirror&gt;</span><br><span class="line">     --&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="title">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">id</span>&gt;</span>nexus-osc<span class="tag">&lt;/<span class="title">id</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="title">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="title">mirrorOf</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">name</span>&gt;</span>Nexusosc<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="title">url</span>&gt;</span>http://maven.oschina.net/content/groups/public/<span class="tag">&lt;/<span class="title">url</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="title">mirror</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">mirrors</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">&lt;!-- profiles</span><br><span class="line">   | This is a list of profiles which can be activated in a variety of ways, and which can modify</span><br><span class="line">   | the build process. Profiles provided in the settings.xml are intended to provide local machine-</span><br><span class="line">   | specific paths and repository locations which allow the build to work in the local environment.</span><br><span class="line">   |</span><br><span class="line">   | For example, if you have an integration testing plugin - like cactus - that needs to know where</span><br><span class="line">   | your Tomcat instance is installed, you can provide a variable here such that the variable is </span><br><span class="line">   | dereferenced during the build process to configure the cactus plugin.</span><br><span class="line">   |</span><br><span class="line">   | As noted above, profiles can be activated in a variety of ways. One way - the activeProfiles</span><br><span class="line">   | section of this document (settings.xml) - will be discussed later. Another way essentially</span><br><span class="line">   | relies on the detection of a system property, either matching a particular value for the property,</span><br><span class="line">   | or merely testing its existence. Profiles can also be activated by JDK version prefix, where a </span><br><span class="line">   | value of '1.4' might activate a profile when the build is executed on a JDK version of '1.4.2_07'.</span><br><span class="line">   | Finally, the list of active profiles can be specified directly from the command line.</span><br><span class="line">   |</span><br><span class="line">   | <span class="doctag"><span class="keyword">NOTE</span></span>: For profiles defined in the settings.xml, you are restricted to specifying only artifact</span><br><span class="line">   |       repositories, plugin repositories, and free-form properties to be used as configuration</span><br><span class="line">   |       variables for plugins in the POM.</span><br><span class="line">   |</span><br><span class="line">   |--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">profiles</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- profile</span><br><span class="line">     | Specifies a set of introductions to the build process, to be activated using one or more of the</span><br><span class="line">     | mechanisms described above. For inheritance purposes, and to activate profiles via &lt;activatedProfiles/&gt;</span><br><span class="line">     | or the command line, profiles have to have an ID that is unique.</span><br><span class="line">     |</span><br><span class="line">     | An encouraged best practice for profile identification is to use a consistent naming convention</span><br><span class="line">     | for profiles, such as 'env-dev', 'env-test', 'env-production', 'user-jdcasey', 'user-brett', etc.</span><br><span class="line">     | This will make it more intuitive to understand what the set of introduced profiles is attempting</span><br><span class="line">     | to accomplish, particularly when you only have a list of profile id's for debug.</span><br><span class="line">     |</span><br><span class="line">     | This profile example uses the JDK version to trigger activation, and provides a JDK-specific repo.</span><br><span class="line">    &lt;profile&gt;</span><br><span class="line">      &lt;id&gt;jdk-1.4&lt;/id&gt;</span><br><span class="line"></span><br><span class="line">      &lt;activation&gt;</span><br><span class="line">        &lt;jdk&gt;1.4&lt;/jdk&gt;</span><br><span class="line">      &lt;/activation&gt;</span><br><span class="line"></span><br><span class="line">      &lt;repositories&gt;</span><br><span class="line">        &lt;repository&gt;</span><br><span class="line">          &lt;id&gt;jdk14&lt;/id&gt;</span><br><span class="line">          &lt;name&gt;Repository for JDK 1.4 builds&lt;/name&gt;</span><br><span class="line">          &lt;url&gt;http://www.myhost.com/maven/jdk14&lt;/url&gt;</span><br><span class="line">          &lt;layout&gt;default&lt;/layout&gt;</span><br><span class="line">          &lt;snapshotPolicy&gt;always&lt;/snapshotPolicy&gt;</span><br><span class="line">        &lt;/repository&gt;</span><br><span class="line">      &lt;/repositories&gt;</span><br><span class="line">    &lt;/profile&gt;</span><br><span class="line">    --&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--</span><br><span class="line">     | Here is another profile, activated by the system property 'target-env' with a value of 'dev',</span><br><span class="line">     | which provides a specific path to the Tomcat instance. To use this, your plugin configuration</span><br><span class="line">     | might hypothetically look like:</span><br><span class="line">     |</span><br><span class="line">     | ...</span><br><span class="line">     | &lt;plugin&gt;</span><br><span class="line">     |   &lt;groupId&gt;org.myco.myplugins&lt;/groupId&gt;</span><br><span class="line">     |   &lt;artifactId&gt;myplugin&lt;/artifactId&gt;</span><br><span class="line">     |   </span><br><span class="line">     |   &lt;configuration&gt;</span><br><span class="line">     |     &lt;tomcatLocation&gt;$&#123;tomcatPath&#125;&lt;/tomcatLocation&gt;</span><br><span class="line">     |   &lt;/configuration&gt;</span><br><span class="line">     | &lt;/plugin&gt;</span><br><span class="line">     | ...</span><br><span class="line">     |</span><br><span class="line">     | <span class="doctag"><span class="keyword">NOTE</span></span>: If you just wanted to inject this configuration whenever someone set 'target-env' to</span><br><span class="line">     |       anything, you could just leave off the &lt;value/&gt; inside the activation-property.</span><br><span class="line">     |</span><br><span class="line">    &lt;profile&gt;</span><br><span class="line">      &lt;id&gt;env-dev&lt;/id&gt;</span><br><span class="line"></span><br><span class="line">      &lt;activation&gt;</span><br><span class="line">        &lt;property&gt;</span><br><span class="line">          &lt;name&gt;target-env&lt;/name&gt;</span><br><span class="line">          &lt;value&gt;dev&lt;/value&gt;</span><br><span class="line">        &lt;/property&gt;</span><br><span class="line">      &lt;/activation&gt;</span><br><span class="line"></span><br><span class="line">      &lt;properties&gt;</span><br><span class="line">        &lt;tomcatPath&gt;/path/to/tomcat/instance&lt;/tomcatPath&gt;</span><br><span class="line">      &lt;/properties&gt;</span><br><span class="line">    &lt;/profile&gt;</span><br><span class="line">    --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">profile</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="title">id</span>&gt;</span>jdk-1.7<span class="tag">&lt;/<span class="title">id</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="title">activation</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="title">jdk</span>&gt;</span>1.7<span class="tag">&lt;/<span class="title">jdk</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="title">activation</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="title">repositories</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="title">repository</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">id</span>&gt;</span>nexus<span class="tag">&lt;/<span class="title">id</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">name</span>&gt;</span>local private nexus<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">url</span>&gt;</span>http://maven.oschina.net/content/groups/public/<span class="tag">&lt;/<span class="title">url</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">releases</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="title">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="title">enabled</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="title">releases</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">snapshots</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="title">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="title">enabled</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="title">snapshots</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="title">repository</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="title">repositories</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="title">pluginRepositories</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="title">pluginRepository</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">id</span>&gt;</span>nexus<span class="tag">&lt;/<span class="title">id</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="title">name</span>&gt;</span>local private nexus<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">url</span>&gt;</span>http://maven.oschina.net/content/groups/public/<span class="tag">&lt;/<span class="title">url</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">releases</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="title">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="title">enabled</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="title">releases</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="title">snapshots</span>&gt;</span></span><br><span class="line">             <span class="tag">&lt;<span class="title">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="title">enabled</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="title">snapshots</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;/<span class="title">pluginRepository</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="title">pluginRepositories</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="title">profile</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="title">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- activeProfiles</span><br><span class="line">   | List of profiles that are active for all builds.</span><br><span class="line">   |</span><br><span class="line">  &lt;activeProfiles&gt;</span><br><span class="line">    &lt;activeProfile&gt;alwaysActiveProfile&lt;/activeProfile&gt;</span><br><span class="line">    &lt;activeProfile&gt;anotherAlwaysActiveProfile&lt;/activeProfile&gt;</span><br><span class="line">  &lt;/activeProfiles&gt;</span><br><span class="line">  --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/">maven</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-maven mirror bak" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -349,190 +404,6 @@
 
 
   
-    <article id="post-配置hadoop2.x 伪分布式集群" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2014/12/28/配置hadoop2.x 伪分布式集群/" class="article-date">
-  	<time datetime="2014-12-27T16:00:00.000Z" itemprop="datePublished">2014-12-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/28/配置hadoop2.x 伪分布式集群/">配置hadoop2.x 伪分布式集群</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="准备材料">准备材料</h3><ul>
-<li>hadoop二进制安装包</li>
-</ul>
-<h3 id="安装步骤">安装步骤</h3><ul>
-<li>配置ssh免密码登陆<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#安装ssh</span></span><br><span class="line">sudo apt-get install openssh-server</span><br><span class="line"><span class="comment">#生成非对称秘钥对</span></span><br><span class="line">ssh-keygen -t rsa -P <span class="string">""</span></span><br><span class="line"><span class="comment">#一直回车，会在.ssh目录下生成 id_rsa  id_rsa.pub 两个文件</span></span><br><span class="line"><span class="built_in">cd</span> .ssh</span><br><span class="line">cat id_rsa.pub &gt;&gt; authorized_keys</span><br><span class="line">chmod <span class="number">600</span> authorized_keys</span><br><span class="line"><span class="comment">#ok 这也就可以实现认证，其他机器如果要实现免密码登陆，只需要把登陆机器的公钥写入到被登陆机器的授权文件 authorized_keys 里面即可。</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2014/12/28/配置hadoop2.x 伪分布式集群/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-Hive use mysql as meta db" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2014/12/28/Hive use mysql as meta db/" class="article-date">
-  	<time datetime="2014-12-27T16:00:00.000Z" itemprop="datePublished">2014-12-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/28/Hive use mysql as meta db/">Hive use mysql as meta db</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>hive.metastore.warehouse.dir<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>/hive/warehouse<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>location of default database for the warehouse<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionURL<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>jdbc:mysql://localhost:3306/hive_hdp?characterEncoding=UTF-8&amp;amp;createDatabaseIfNotExist=true<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>JDBC connect string for a JDBC metastore<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionDriverName<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>com.mysql.jdbc.Driver<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>Driver class name for a JDBC metastore<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionUserName<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>root<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>username to use against metastore database<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionPassword<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>q1w2e3r4<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>password to use against metastore database<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hive/">hive</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-OpenCV机器学习" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2014/12/28/OpenCV机器学习/" class="article-date">
-  	<time datetime="2014-12-27T16:00:00.000Z" itemprop="datePublished">2014-12-28</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/28/OpenCV机器学习/">OpenCV机器学习</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="环境搭建">环境搭建</h3><p>首先本机安装opencv，没有安装也可以copy对应的opencv_java249.dll也可以<br>安装opencv之后会有对应的opencv-249.jar文件以及对应的dll文件，需要引入到工程中。如图所示。</p>
-<p><img src="http://needpp.qiniudn.com/2014/12/28/4ceb8482-8e60-11e4-a385-f23c9156bf7b.png" alt=""></p>
-<p>尤其需要注意的是dll文件的引用，在buildpath下配置</p>
-<p><img src="http://needpp.qiniudn.com/2014/12/28/4d2c1c4a-8e60-11e4-a385-f23c9156bf7b.png" alt=""></p>
-<p>为了使用的方便我这里把dll文件一起打包到工程中，使用相对路径引用这个dll文件，至此配置完成。<br>下面进行验证，如果这个代码运行完成没有报错的话说明opencv的环境已经配置好可以进行下面的开发了。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> edu.dcy.opencv;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.Core;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.CvType;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.Mat;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span><br><span class="line"></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">( String[] args )</span></span><br><span class="line">   </span>&#123;</span><br><span class="line">      System.loadLibrary( Core.NATIVE_LIBRARY_NAME );</span><br><span class="line">      Mat mat = Mat.eye( <span class="number">8</span>, <span class="number">8</span>, CvType.CV_8UC1 );</span><br><span class="line">      System.out.println(  mat.dump() );</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="机器学习">机器学习</h3><p>之前使用vs2010一直没有正式完成过ml，原因是没有生成正确的训练集合，今天重拾这个玩意儿，总算搞定，再次记录一下。</p>
-<p>机器学习分为很多阶，这里除开数据预处理之类的，直接从构建训练数据，对数据进行训练，然后测试这么个过程，体验下opencv对图像进行机器学习的过程。<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ml/">ml</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/opencv/">opencv</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/2014/12/28/OpenCV机器学习/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
     <article id="post-Hive 学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -606,6 +477,125 @@
 
       
 
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Hive use mysql as meta db" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/28/Hive use mysql as meta db/" class="article-date">
+  	<time datetime="2014-12-27T16:00:00.000Z" itemprop="datePublished">2014-12-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/28/Hive use mysql as meta db/">Hive use mysql as meta db</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>hive.metastore.warehouse.dir<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>/hive/warehouse<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>location of default database for the warehouse<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionURL<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>jdbc:mysql://localhost:3306/hive_hdp?characterEncoding=UTF-8&amp;amp;createDatabaseIfNotExist=true<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>JDBC connect string for a JDBC metastore<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionDriverName<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>com.mysql.jdbc.Driver<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>Driver class name for a JDBC metastore<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionUserName<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>root<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>username to use against metastore database<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">property</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">name</span>&gt;</span>javax.jdo.option.ConnectionPassword<span class="tag">&lt;/<span class="title">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">value</span>&gt;</span>q1w2e3r4<span class="tag">&lt;/<span class="title">value</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">description</span>&gt;</span>password to use against metastore database<span class="tag">&lt;/<span class="title">description</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="title">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hive/">hive</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mysql/">mysql</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-配置hadoop2.x 伪分布式集群" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/12/28/配置hadoop2.x 伪分布式集群/" class="article-date">
+  	<time datetime="2014-12-27T16:00:00.000Z" itemprop="datePublished">2014-12-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/28/配置hadoop2.x 伪分布式集群/">配置hadoop2.x 伪分布式集群</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="准备材料">准备材料</h3><ul>
+<li>hadoop二进制安装包</li>
+</ul>
+<h3 id="安装步骤">安装步骤</h3><ul>
+<li>配置ssh免密码登陆<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#安装ssh</span></span><br><span class="line">sudo apt-get install openssh-server</span><br><span class="line"><span class="comment">#生成非对称秘钥对</span></span><br><span class="line">ssh-keygen -t rsa -P <span class="string">""</span></span><br><span class="line"><span class="comment">#一直回车，会在.ssh目录下生成 id_rsa  id_rsa.pub 两个文件</span></span><br><span class="line"><span class="built_in">cd</span> .ssh</span><br><span class="line">cat id_rsa.pub &gt;&gt; authorized_keys</span><br><span class="line">chmod <span class="number">600</span> authorized_keys</span><br><span class="line"><span class="comment">#ok 这也就可以实现认证，其他机器如果要实现免密码登陆，只需要把登陆机器的公钥写入到被登陆机器的授权文件 authorized_keys 里面即可。</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a  href="/2014/12/28/配置hadoop2.x 伪分布式集群/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -790,10 +780,10 @@
 
 
   
-    <article id="post-Maven编译hadoop2.5.2" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-OpenCV机器学习" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2014/12/28/Maven编译hadoop2.5.2/" class="article-date">
+      <a href="/2014/12/28/OpenCV机器学习/" class="article-date">
   	<time datetime="2014-12-27T16:00:00.000Z" itemprop="datePublished">2014-12-28</time>
 </a>
     </div>
@@ -807,7 +797,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/28/Maven编译hadoop2.5.2/">Maven编译hadoop2.5.2</a>
+      <a class="article-title" href="/2014/12/28/OpenCV机器学习/">OpenCV机器学习</a>
     </h1>
   
 
@@ -816,22 +806,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="准备工具">准备工具</h3><ul>
-<li>jdk安装配置 （使用orace-jdk 6以上，而不是open-jdk）</li>
-<li>maven配置 <code>sudo apt-get install maven</code> ，使用二进制包进行配置更加灵活。</li>
-<li><p>protobuf的安装<br><code>wget https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.gz</code><br>备用链接 <a href="">百度云</a><br>解压安装，记得导入这个变量 </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=~/protobuf-<span class="number">2.5</span>.<span class="number">0</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>ant安装 </p>
-</li>
-<li><p>其他软件安装</p>
-<figure class="highlight q"><table><tr><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> -y install maven build-essential autoconf automake libtool cmake zlib1g-<span class="built_in">dev</span> pkg-config libssl-<span class="built_in">dev</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>编译命令<br>进入到hadoop-src目录进行编译</p>
-<figure class="highlight aspectj"><table><tr><td class="code"><pre><span class="line">mvn <span class="keyword">package</span> -Pdist,<span class="keyword">native</span> -DskipTests -Dtar</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>耐心等待。。。。<br>
+        <h3 id="环境搭建">环境搭建</h3><p>首先本机安装opencv，没有安装也可以copy对应的opencv_java249.dll也可以<br>安装opencv之后会有对应的opencv-249.jar文件以及对应的dll文件，需要引入到工程中。如图所示。</p>
+<p><img src="http://needpp.qiniudn.com/2014/12/28/4ceb8482-8e60-11e4-a385-f23c9156bf7b.png" alt=""></p>
+<p>尤其需要注意的是dll文件的引用，在buildpath下配置</p>
+<p><img src="http://needpp.qiniudn.com/2014/12/28/4d2c1c4a-8e60-11e4-a385-f23c9156bf7b.png" alt=""></p>
+<p>为了使用的方便我这里把dll文件一起打包到工程中，使用相对路径引用这个dll文件，至此配置完成。<br>下面进行验证，如果这个代码运行完成没有报错的话说明opencv的环境已经配置好可以进行下面的开发了。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> edu.dcy.opencv;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.Core;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.CvType;</span><br><span class="line"><span class="keyword">import</span> org.opencv.core.Mat;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span><br><span class="line"></span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">( String[] args )</span></span><br><span class="line">   </span>&#123;</span><br><span class="line">      System.loadLibrary( Core.NATIVE_LIBRARY_NAME );</span><br><span class="line">      Mat mat = Mat.eye( <span class="number">8</span>, <span class="number">8</span>, CvType.CV_8UC1 );</span><br><span class="line">      System.out.println(  mat.dump() );</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="机器学习">机器学习</h3><p>之前使用vs2010一直没有正式完成过ml，原因是没有生成正确的训练集合，今天重拾这个玩意儿，总算搞定，再次记录一下。</p>
+<p>机器学习分为很多阶，这里除开数据预处理之类的，直接从构建训练数据，对数据进行训练，然后测试这么个过程，体验下opencv对图像进行机器学习的过程。<br>
       
     </div>
     
@@ -839,14 +821,14 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hadoop/">hadoop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/maven/">maven</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ml/">ml</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/opencv/">opencv</a></li></ul>
 	</div>
 
       
 
       
         <p class="article-more-link">
-          <a  href="/2014/12/28/Maven编译hadoop2.5.2/#more">more >></a>
+          <a  href="/2014/12/28/OpenCV机器学习/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>

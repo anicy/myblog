@@ -177,6 +177,63 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-细思恐极" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/06/30/细思恐极/" class="article-date">
+  	<time datetime="2015-06-30T06:35:52.000Z" itemprop="datePublished">2015-06-30</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/06/30/细思恐极/">细思恐极</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>华丽的分割线</p>
+<hr>
+<p><img src="http://7punic.com1.z0.glb.clouddn.com/dvl2y5iqq3v504yx6vzyj5gcle.png" alt=""></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/">life</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-临时存储" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -669,63 +726,6 @@
         <p class="article-more-link">
           <a  href="/2015/04/27/pandas数据操作/#more">more >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-Q命令在csv和tsv上使用sql语句" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/04/22/Q命令在csv和tsv上使用sql语句/" class="article-date">
-  	<time datetime="2015-04-21T16:00:00.000Z" itemprop="datePublished">2015-04-22</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/22/Q命令在csv和tsv上使用sql语句/">Q命令在csv和tsv上使用sql语句</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">q allows performing SQL-like statements <span class="command"><span class="keyword">on</span> <span class="title">tabular</span> <span class="title">text</span> <span class="title">data</span>. <span class="title">Its</span> <span class="title">purpose</span> <span class="title">is</span> <span class="title">to</span> <span class="title">bring</span> <span class="title">SQL</span> <span class="title">expressive</span> <span class="title">power</span> <span class="title">to</span> <span class="title">the</span> <span class="title">Linux</span> <span class="title">command</span> <span class="title">line</span> <span class="title">and</span> <span class="title">to</span> <span class="title">provide</span> <span class="title">easy</span> <span class="title">access</span> <span class="title">to</span> <span class="title">text</span> <span class="title">as</span> <span class="title">actual</span> <span class="title">data</span>.</span></span><br><span class="line"></span><br><span class="line">Query should be <span class="operator">an</span> SQL-like query which <span class="operator">contains</span> filenames instead <span class="operator">of</span> table names (<span class="operator">or</span> - <span class="keyword">for</span> <span class="keyword">stdin</span>). The query itself should be provided <span class="keyword">as</span> <span class="constant">one</span> parameter <span class="built_in">to</span> <span class="operator">the</span> tool (i.e. enclosed <span class="operator">in</span> quotes).</span><br><span class="line"></span><br><span class="line">Use -H <span class="built_in">to</span> signify that <span class="operator">the</span> input <span class="operator">contains</span> <span class="operator">a</span> header <span class="built_in">line</span>. Column names will be detected automatically <span class="operator">in</span> that <span class="keyword">case</span>, <span class="operator">and</span> can be used <span class="operator">in</span> <span class="operator">the</span> query. If this option is <span class="operator">not</span> provided, columns will be named cX, starting <span class="operator">with</span> <span class="number">1</span> (e.g. q <span class="string">"SELECT c3,c8 from ..."</span>).</span><br><span class="line"></span><br><span class="line">Use -d <span class="built_in">to</span> specify <span class="operator">the</span> input delimiter.</span><br><span class="line"></span><br><span class="line">Column types are auto detected <span class="keyword">by</span> <span class="operator">the</span> tool, no casting is needed.</span><br><span class="line"></span><br><span class="line">Please note that column names that <span class="built_in">include</span> spaces need <span class="built_in">to</span> be used <span class="operator">in</span> <span class="operator">the</span> query <span class="operator">with</span> back-<span class="built_in">ticks</span>, <span class="keyword">as</span> per <span class="operator">the</span> sqlite standard.</span><br><span class="line"></span><br><span class="line">Query/Input/Output encodings are fully supported (<span class="operator">and</span> q tries <span class="built_in">to</span> provide out-<span class="operator">of</span>-<span class="operator">the</span>-box usability <span class="operator">in</span> that area). Please use -e,-E <span class="operator">and</span> -Q <span class="built_in">to</span> control encoding <span class="keyword">if</span> needed.</span><br><span class="line"></span><br><span class="line">All sqlite3 SQL constructs are supported, including joins across <span class="built_in">files</span> (use <span class="operator">an</span> <span class="built_in">alias</span> <span class="keyword">for</span> <span class="keyword">each</span> table).</span><br><span class="line">See <span class="keyword">https</span>://github.com/harelba/q <span class="keyword">for</span> more details.</span><br></pre></td></tr></table></figure>
-<p>i.csv 文件<br><figure class="highlight autohotkey"><table><tr><td class="code"><pre><span class="line">item_id,item_geohash,item_category</span><br><span class="line"><span class="number">312051294</span>,,<span class="number">8270</span></span><br><span class="line"><span class="number">99999754</span>,,<span class="number">7393</span></span><br><span class="line"><span class="number">131746128</span>,,<span class="number">7876</span></span><br><span class="line"><span class="number">385731330</span>,,<span class="number">10544</span></span><br><span class="line"><span class="number">100004415</span>,,<span class="number">3064</span></span><br><span class="line"><span class="number">76588345</span>,<span class="number">95</span>qqvei,<span class="number">5411</span></span><br><span class="line"><span class="number">312053799</span>,,<span class="number">13547</span></span><br><span class="line"><span class="number">100004955</span>,,<span class="number">7033</span></span><br><span class="line"><span class="number">312322681</span>,,<span class="number">8376</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight autohotkey"><table><tr><td class="code"><pre><span class="line">cat i.csv | q -H -d ',' <span class="string">"select * from -"</span></span><br><span class="line"></span><br><span class="line"><span class="number">312051294</span>,,<span class="number">8270</span></span><br><span class="line"><span class="number">99999754</span>,,<span class="number">7393</span></span><br><span class="line"><span class="number">131746128</span>,,<span class="number">7876</span></span><br><span class="line"><span class="number">385731330</span>,,<span class="number">10544</span></span><br><span class="line"><span class="number">100004415</span>,,<span class="number">3064</span></span><br><span class="line"><span class="number">76588345</span>,<span class="number">95</span>qqvei,<span class="number">5411</span></span><br><span class="line"><span class="number">312053799</span>,,<span class="number">13547</span></span><br><span class="line"><span class="number">100004955</span>,,<span class="number">7033</span></span><br><span class="line"><span class="number">312322681</span>,,<span class="number">8376</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/q/">q</a></li></ul>
-	</div>
-
-      
-
       
       <div class="clearfix"></div>
     </div>

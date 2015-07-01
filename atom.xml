@@ -5,7 +5,7 @@
   <subtitle><![CDATA[happy wife, happy life...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://needpp.com//"/>
-  <updated>2015-06-30T01:38:56.743Z</updated>
+  <updated>2015-07-01T14:35:57.666Z</updated>
   <id>http://needpp.com//</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[邻家女孩]]></title>
+    <link href="http://needpp.com/2015/07/01/%E9%82%BB%E5%AE%B6%E5%A5%B3%E5%AD%A9/"/>
+    <id>http://needpp.com/2015/07/01/邻家女孩/</id>
+    <published>2015-07-01T14:34:01.000Z</published>
+    <updated>2015-07-01T14:35:57.666Z</updated>
+    <content type="html"><![CDATA[<h3 id="邻家女孩">邻家女孩</h3><p><img src="http://7punic.com1.z0.glb.clouddn.com/b5971d20-1ffb-11e5-a6a9-b5862c47e4ba.png" alt=""></p>
+<hr>
+<p>讲述的是那么一个故事，伴随着我的童年…</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h3 id="邻家女孩">邻家女孩</h3><p><img src="http://7punic.com1.z0.glb.clouddn.com/b5971d20-1ffb-11e5-a6a9-b5862c47e4ba.png" alt=""></p>
+<hr>
+<p>讲述的是]]>
+    </summary>
+    
+      <category term="dream" scheme="http://needpp.com/tags/dream/"/>
+    
+      <category term="life" scheme="http://needpp.com/tags/life/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[细思恐极]]></title>
@@ -107,27 +129,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[多服务器间如何共享session]]></title>
-    <link href="http://needpp.com/2015/05/25/%E5%A4%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%A6%82%E4%BD%95%E5%85%B1%E4%BA%ABsession/"/>
-    <id>http://needpp.com/2015/05/25/多服务器间如何共享session/</id>
-    <published>2015-05-24T16:00:00.000Z</published>
-    <updated>2015-06-26T05:03:05.653Z</updated>
-    <content type="html"><![CDATA[<p>留空</p>
-<hr>
-<p> 华丽的分割线。。。。。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>留空</p>
-<hr>
-<p> 华丽的分割线。。。。。</p>
-]]>
-    </summary>
-    
-      <category term="linux" scheme="http://needpp.com/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[决策树、CART、GBRT、Adaboost]]></title>
     <link href="http://needpp.com/2015/05/25/%E5%86%B3%E7%AD%96%E6%A0%91%E3%80%81CART%E3%80%81GBRT%E3%80%81Adaboost/"/>
     <id>http://needpp.com/2015/05/25/决策树、CART、GBRT、Adaboost/</id>
@@ -172,6 +173,27 @@
       <category term="gbrt" scheme="http://needpp.com/tags/gbrt/"/>
     
       <category term="ml" scheme="http://needpp.com/tags/ml/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[多服务器间如何共享session]]></title>
+    <link href="http://needpp.com/2015/05/25/%E5%A4%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%A6%82%E4%BD%95%E5%85%B1%E4%BA%ABsession/"/>
+    <id>http://needpp.com/2015/05/25/多服务器间如何共享session/</id>
+    <published>2015-05-24T16:00:00.000Z</published>
+    <updated>2015-06-26T05:03:05.653Z</updated>
+    <content type="html"><![CDATA[<p>留空</p>
+<hr>
+<p> 华丽的分割线。。。。。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>留空</p>
+<hr>
+<p> 华丽的分割线。。。。。</p>
+]]>
+    </summary>
+    
+      <category term="linux" scheme="http://needpp.com/tags/linux/"/>
     
   </entry>
   
@@ -599,37 +621,6 @@
     </summary>
     
       <category term="mysql" scheme="http://needpp.com/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[phoenix data process]]></title>
-    <link href="http://needpp.com/2015/01/06/phoenix%20data%20process/"/>
-    <id>http://needpp.com/2015/01/06/phoenix data process/</id>
-    <published>2015-01-05T16:00:00.000Z</published>
-    <updated>2015-06-25T01:10:06.792Z</updated>
-    <content type="html"><![CDATA[<h3 id="orgin_data">orgin data</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">粤XXXXX,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">21</span>,卡口——兴达路贤和路口,<span class="number">43</span>,<span class="number">2</span>,<span class="number">1</span></span><br><span class="line">粤XXXXX,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">23</span>,卡口——兴达路贤和路口,<span class="number">45</span>,<span class="number">2</span>,<span class="number">2</span></span><br><span class="line">粤XXXXX,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">23</span>,卡口——兴达路贤和路口,<span class="number">43</span>,<span class="number">2</span>,<span class="number">2</span></span><br><span class="line">粤Y31D69,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">32</span>,卡口——兴达路贤和路口,<span class="number">35</span>,<span class="number">2</span>,<span class="number">1</span></span><br><span class="line">粤ESV818,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">36</span>,卡口——兴达路贤和路口,<span class="number">50</span>,<span class="number">2</span>,<span class="number">2</span></span><br><span class="line">粤EJM808,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">46</span>,卡口——兴达路贤和路口,<span class="number">45</span>,<span class="number">2</span>,<span class="number">1</span></span><br><span class="line">粤E8J090,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">46</span>,卡口——兴达路贤和路口,<span class="number">50</span>,<span class="number">2</span>,<span class="number">1</span></span><br><span class="line">粤EV330C,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">49</span>,卡口——兴达路贤和路口,<span class="number">46</span>,<span class="number">2</span>,<span class="number">2</span></span><br><span class="line">粤EV3300,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">49</span>,卡口——兴达路贤和路口,<span class="number">44</span>,<span class="number">2</span>,<span class="number">1</span></span><br><span class="line">粤E09836,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">16</span>:<span class="number">59</span>,卡口——兴达路贤和路口,<span class="number">43</span>,<span class="number">1</span>,<span class="number">1</span></span><br><span class="line">粤EV5436,<span class="number">2013</span>/<span class="number">10</span>/<span class="number">8</span> <span class="number">13</span>:<span class="number">17</span>:<span class="number">17</span>,卡口——兴达路贤和路口,<span class="number">33</span>,<span class="number">2</span>,<span class="number">1</span></span><br></pre></td></tr></table></figure>
-<h3 id="sed_replace">sed replace</h3><p><code>sed  &#39;s/\//-/g&#39; cheliu.csv &gt; cheliuresult.csv</code><br><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">粤<span class="tag">ELQ311</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:21</span>,卡口——兴达路贤和路口,43,2,1</span><br><span class="line">湘<span class="tag">G12067</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:23</span>,卡口——兴达路贤和路口,45,2,2</span><br><span class="line">湘<span class="tag">G12067</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:23</span>,卡口——兴达路贤和路口,43,2,2</span><br><span class="line">粤<span class="tag">Y31D69</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:32</span>,卡口——兴达路贤和路口,35,2,1</span><br><span class="line">粤<span class="tag">ESV818</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:36</span>,卡口——兴达路贤和路口,50,2,2</span><br><span class="line">粤<span class="tag">EJM808</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:46</span>,卡口——兴达路贤和路口,45,2,1</span><br><span class="line">粤<span class="tag">E8J090</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:46</span>,卡口——兴达路贤和路口,50,2,1</span><br><span class="line">粤<span class="tag">EV330C</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:49</span>,卡口——兴达路贤和路口,46,2,2</span><br><span class="line">粤<span class="tag">EV3300</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:49</span>,卡口——兴达路贤和路口,44,2,1</span><br><span class="line">粤<span class="tag">E09836</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:59</span>,卡口——兴达路贤和路口,43,1,1</span><br></pre></td></tr></table></figure></p>
-<h3 id="add_rowkey">add rowkey</h3><p><code>awk -F &#39;,&#39; &#39;{printf(&quot;%d,%s\n&quot;,NR,$0)}&#39; cheresult.csv &gt; finresult.csv</code></p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">1,粤<span class="tag">ELQ311</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:21</span>,卡口——兴达路贤和路口,43,2,1</span><br><span class="line">2,湘<span class="tag">G12067</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:23</span>,卡口——兴达路贤和路口,45,2,2</span><br><span class="line">3,湘<span class="tag">G12067</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:23</span>,卡口——兴达路贤和路口,43,2,2</span><br><span class="line">4,粤<span class="tag">Y31D69</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:32</span>,卡口——兴达路贤和路口,35,2,1</span><br><span class="line">5,粤<span class="tag">ESV818</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:36</span>,卡口——兴达路贤和路口,50,2,2</span><br><span class="line">6,粤<span class="tag">EJM808</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:46</span>,卡口——兴达路贤和路口,45,2,1</span><br><span class="line">7,粤<span class="tag">E8J090</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:46</span>,卡口——兴达路贤和路口,50,2,1</span><br><span class="line">8,粤<span class="tag">EV330C</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:49</span>,卡口——兴达路贤和路口,46,2,2</span><br><span class="line">9,粤<span class="tag">EV3300</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:49</span>,卡口——兴达路贤和路口,44,2,1</span><br><span class="line">10,粤<span class="tag">E09836</span>,2013<span class="tag">-10-8</span> 13<span class="pseudo">:16</span><span class="pseudo">:59</span>,卡口——兴达路贤和路口,43,1,1</span><br></pre></td></tr></table></figure>
-<h3 id="create_table_by_phoenix_on_hbase">create table by phoenix on hbase</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">create</span> <span class="keyword">table</span> car2(</span><br><span class="line">    id  <span class="built_in">bigint</span> <span class="keyword">primary</span> <span class="keyword">key</span>,</span><br><span class="line">    carnum <span class="built_in">varchar</span>(<span class="number">20</span>),</span><br><span class="line">    <span class="keyword">time</span> <span class="keyword">TIMESTAMP</span>,</span><br><span class="line">    kakou <span class="built_in">varchar</span>(<span class="number">100</span>),</span><br><span class="line">    speed <span class="built_in">integer</span>,</span><br><span class="line">    color tinyint,</span><br><span class="line">    style tinyint</span><br><span class="line">)</span></span><br></pre></td></tr></table></figure>
-<h3 id="loading_data_to_hbase">loading data to hbase</h3><p><code>$phoeix_home/bin/psql.py -t CAR2 master ../../data/cardata/finresult.csv</code></p>
-<h3 id="loading_data_by_mapreduce">loading data by mapreduce</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">create</span> <span class="keyword">table</span> carmr(</span><br><span class="line">    id  <span class="built_in">bigint</span> <span class="keyword">primary</span> <span class="keyword">key</span>,</span><br><span class="line">    carnum <span class="built_in">varchar</span>(<span class="number">20</span>),</span><br><span class="line">    <span class="keyword">time</span> <span class="keyword">TIMESTAMP</span>,</span><br><span class="line">    kakou <span class="built_in">varchar</span>(<span class="number">100</span>),</span><br><span class="line">    speed <span class="built_in">integer</span>,</span><br><span class="line">    color tinyint,</span><br><span class="line">    style tinyint</span><br><span class="line">)</span></span><br></pre></td></tr></table></figure>
-<p>upload to hdfs<br><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">hadoop fs -put finresult<span class="class">.csv</span>  /phoenix</span><br></pre></td></tr></table></figure></p>
-<p>load data by mapreduce<br><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">HADOOP_CLASSPATH=/home/spark/soft/hbase/lib/hbase-protocol-<span class="number">0.98</span>.<span class="number">8</span>-hadoop2<span class="class">.jar</span>:/home/spark/soft/hbase/conf hadoop jar phoenix-<span class="number">4.2</span>.<span class="number">1</span>-client<span class="class">.jar</span> org<span class="class">.apache</span><span class="class">.phoenix</span><span class="class">.mapreduce</span><span class="class">.CsvBulkLoadTool</span> --<span class="tag">table</span> CARMR --<span class="tag">input</span> /phoenix/finresult.csv</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://needpp.qiniudn.com/2015/01/06/3149765e-954e-11e4-a385-f23c9156bf7b.png" alt=""></p>
-<p>finish</p>
-<p><img src="http://needpp.qiniudn.com/2015/01/06/3235e70a-954e-11e4-a385-f23c9156bf7b.png" alt=""></p>
-<p>check the data</p>
-<p><img src="http://needpp.qiniudn.com/2015/01/06/2e9a5194-954e-11e4-a385-f23c9156bf7b.png" alt=""></p>
-<h3 id="append">append</h3><h4 id="psql-py_loader">psql.py loader</h4><figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">Usage: psql [-t <span class="keyword">table</span>-name] [-<span class="keyword">h</span> comma-separated-column-names | <span class="keyword">in</span>-<span class="keyword">line</span>] &lt;zookeeper&gt;  &lt;path-to-sql-or-csv-<span class="keyword">file</span>&gt;...</span><br><span class="line">Example 1. Create <span class="keyword">table</span>, upsert row and <span class="keyword">run</span> <span class="keyword">query</span> using single .sql <span class="keyword">file</span></span><br><span class="line">./psql.py localhost &lt;examples <span class="keyword">dir</span>&gt;/STOCK_SYMBOL.sql</span><br><span class="line"></span><br><span class="line">Example 2. Create <span class="keyword">table</span>, load CSV data and <span class="keyword">run</span> queries using .csv and .sql files:</span><br><span class="line">./psql.py localhost &lt;examples <span class="keyword">dir</span>&gt;/WEB_STAT.sql &lt;examples <span class="keyword">dir</span>&gt;/WEB_STAT.csv &lt;examples <span class="keyword">dir</span>&gt;/WEB_STAT_QUERIES.sql</span><br><span class="line"></span><br><span class="line"><span class="keyword">Note</span>: Please see comments <span class="keyword">in</span> WEB_STAT_QUERIES.sql <span class="keyword">for</span> the <span class="keyword">sample</span> queries being executed</span><br></pre></td></tr></table></figure>
-<h4 id="CSV_MapReduce_Loader">CSV MapReduce Loader</h4><figure class="highlight http"><table><tr><td class="code"><pre><span class="line"><span class="attribute">Usage</span>: <span class="string">hadoop jar phoneix-[version]-mapreduce.jar &lt;parameters&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="haml"> -<span class="ruby">a,--array-delimiter &lt;arg&gt;   <span class="constant">Array</span> element delimiter (optional)</span><br><span class="line"></span> -<span class="ruby">c,--import-columns &lt;arg&gt;    <span class="constant">Comma</span>-separated list of columns to be</span><br><span class="line"></span>                              imported</span><br><span class="line"> -<span class="ruby">d,--delimiter &lt;arg&gt;         <span class="constant">Input</span> delimiter, defaults to comma</span><br><span class="line"></span> -<span class="ruby">g,--ignore-errors           <span class="constant">Ignore</span> input errors</span><br><span class="line"></span> -<span class="ruby">h,--help                    <span class="constant">Show</span> this help <span class="keyword">and</span> quit</span><br><span class="line"></span> -<span class="ruby">i,--input &lt;arg&gt;             <span class="constant">Input</span> <span class="constant">CSV</span> path (mandatory)</span><br><span class="line"></span> -<span class="ruby">o,--output &lt;arg&gt;            <span class="constant">Output</span> path <span class="keyword">for</span> temporary <span class="constant">HFiles</span> (optional)</span><br><span class="line"></span> -<span class="ruby">s,--schema &lt;arg&gt;            <span class="constant">Phoenix</span> schema name (optional)</span><br><span class="line"></span> -<span class="ruby">t,--table &lt;arg&gt;             <span class="constant">Phoenix</span> table name (mandatory)</span><br><span class="line"></span> -<span class="ruby">z,--zookeeper &lt;arg&gt;         <span class="constant">Zookeeper</span> quorum to connect to (optional)</span></span></span><br></pre></td></tr></table></figure>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h3 id="orgin_data">orgin data</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">粤XXXXX,<span class="nu]]>
-    </summary>
-    
-      <category term="phoenix" scheme="http://needpp.com/tags/phoenix/"/>
     
   </entry>
   

@@ -5,7 +5,7 @@
   <subtitle><![CDATA[happy wife, happy life...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://needpp.com//"/>
-  <updated>2015-07-01T14:48:00.268Z</updated>
+  <updated>2015-07-01T14:51:20.060Z</updated>
   <id>http://needpp.com//</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[markdown编辑器]]></title>
+    <title><![CDATA[markdown编辑器--重复造轮子]]></title>
     <link href="http://needpp.com/2015/07/01/markdown%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     <id>http://needpp.com/2015/07/01/markdown编辑器/</id>
     <published>2015-07-01T04:38:40.000Z</published>
-    <updated>2015-07-01T14:48:00.268Z</updated>
+    <updated>2015-07-01T14:51:20.060Z</updated>
     <content type="html"><![CDATA[<p>使用七牛作图床，迁移至静态博客后贴图太麻烦，需要上传图片到图床，然后把链接复制回文件进行引用。简直就是浪费绳命！</p>
 <p>于是，折腾！ 找到轮子改造之…</p>
 <p>添加新特征： 粘贴图片 — &gt; 七牛云 —&gt; 引用</p>

@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://needpp.com/2015/09/01/Geolife%20on%20LetZink/</loc>
+    <lastmod>2015-10-24T13:37:33.928Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://needpp.com/2015/10/24/OAuth2.0%20Authorization%20Model/</loc>
     <lastmod>2015-10-24T13:32:23.233Z</lastmod>
   </url>
@@ -147,6 +152,16 @@
   </url>
   
   <url>
+    <loc>http://needpp.com/2015/03/18/spark%20demo%20to%20save.../</loc>
+    <lastmod>2015-06-25T01:10:06.800Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://needpp.com/2014/12/11/Weka%E6%A8%A1%E5%9E%8B%E5%AF%BC%E5%87%BA-%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9/</loc>
+    <lastmod>2015-06-25T01:10:06.800Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://needpp.com/2014/12/28/tiny%20and%20beautify/</loc>
     <lastmod>2015-06-25T01:10:06.800Z</lastmod>
   </url>
@@ -157,13 +172,8 @@
   </url>
   
   <url>
-    <loc>http://needpp.com/2014/12/11/Weka%E6%A8%A1%E5%9E%8B%E5%AF%BC%E5%87%BA-%E5%B1%9E%E6%80%A7%E9%80%89%E6%8B%A9/</loc>
-    <lastmod>2015-06-25T01:10:06.800Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://needpp.com/2015/03/18/spark%20demo%20to%20save.../</loc>
-    <lastmod>2015-06-25T01:10:06.800Z</lastmod>
+    <loc>http://needpp.com/2014/10/22/%E9%82%A3%E4%BA%9B%E8%AE%A9%E4%BA%BA%E7%9B%B8%E8%A7%81%E6%81%A8%E6%99%9A%E7%9A%84%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2015-06-25T01:10:06.796Z</lastmod>
   </url>
   
   <url>
@@ -174,16 +184,6 @@
   <url>
     <loc>http://needpp.com/2015/01/18/shell%20%E5%88%A4%E6%96%ADhadoop%20%E6%98%AF%E5%90%A6%E5%90%AF%E5%8A%A8%E6%88%90%E5%8A%9F/</loc>
     <lastmod>2015-06-25T01:10:06.796Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://needpp.com/2014/10/22/%E9%82%A3%E4%BA%9B%E8%AE%A9%E4%BA%BA%E7%9B%B8%E8%A7%81%E6%81%A8%E6%99%9A%E7%9A%84%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2015-06-25T01:10:06.796Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://needpp.com/2014/12/24/Weka%E5%AF%BC%E5%87%BA%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E--%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2015-06-25T01:10:06.792Z</lastmod>
   </url>
   
   <url>
@@ -202,7 +202,27 @@
   </url>
   
   <url>
+    <loc>http://needpp.com/2014/12/24/Weka%E5%AF%BC%E5%87%BA%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E--%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2015-06-25T01:10:06.792Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://needpp.com/2014/12/22/Ubuntu%20%E4%BD%BF%E7%94%A8nginx%E9%83%A8%E7%BD%B2flask%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2015-06-25T01:10:06.788Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://needpp.com/2014/10/22/git%E7%AE%80%E6%98%93%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</loc>
+    <lastmod>2015-06-25T01:10:06.788Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://needpp.com/2014/12/30/phoenix%20for%20hbase/</loc>
+    <lastmod>2015-06-25T01:10:06.788Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://needpp.com/2014/12/28/Hive%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2015-06-25T01:10:06.788Z</lastmod>
   </url>
   
@@ -217,22 +237,7 @@
   </url>
   
   <url>
-    <loc>http://needpp.com/2014/12/30/phoenix%20for%20hbase/</loc>
-    <lastmod>2015-06-25T01:10:06.788Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://needpp.com/2015/04/08/spark%20car/</loc>
-    <lastmod>2015-06-25T01:10:06.788Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://needpp.com/2014/12/22/Ubuntu%20%E4%BD%BF%E7%94%A8nginx%E9%83%A8%E7%BD%B2flask%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2015-06-25T01:10:06.788Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://needpp.com/2014/12/28/Hive%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2015-06-25T01:10:06.788Z</lastmod>
   </url>
   
@@ -242,7 +247,7 @@
   </url>
   
   <url>
-    <loc>http://needpp.com/2014/10/22/Weka%20%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
+    <loc>http://needpp.com/2014/10/22/github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2015-06-25T01:10:06.784Z</lastmod>
   </url>
   
@@ -252,7 +257,7 @@
   </url>
   
   <url>
-    <loc>http://needpp.com/2014/10/22/github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <loc>http://needpp.com/2014/10/22/Weka%20%E4%BA%8C%E6%AC%A1%E5%BC%80%E5%8F%91%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2015-06-25T01:10:06.784Z</lastmod>
   </url>
   

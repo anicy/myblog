@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   
-  <title><![CDATA[Thinkml's blog]]></title>
+  <title><![CDATA[anicy's blog]]></title>
   <subtitle><![CDATA[happy wife, happy life...]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://needpp.com//"/>
+  <link href="http://i.anicy.me//"/>
   <updated>2015-10-24T13:32:23.233Z</updated>
-  <id>http://needpp.com//</id>
+  <id>http://i.anicy.me//</id>
   
   <author>
     <name><![CDATA[thinkml]]></name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title><![CDATA[OAuth2.0 Authorization Model]]></title>
-    <link href="http://needpp.com/2015/10/24/OAuth2.0%20Authorization%20Model/"/>
-    <id>http://needpp.com/2015/10/24/OAuth2.0 Authorization Model/</id>
+    <link href="http://i.anicy.me/2015/10/24/OAuth2.0%20Authorization%20Model/"/>
+    <id>http://i.anicy.me/2015/10/24/OAuth2.0 Authorization Model/</id>
     <published>2015-10-23T16:00:00.000Z</published>
     <updated>2015-10-24T13:32:23.233Z</updated>
     <content type="html"><![CDATA[<p>近几天查阅了很多的技术文档、官方非官方的、博客内容、开源项目等 。对OAuth授权模型有了一定的了解，OAuth是一个关于授权（authorization）的开放网络标准，在全世界得到广泛应用，目前的版本是2.0版。网络上关于OAuth的阐述文章很多也有很多具体的实现，这篇文章的目的是总结一下自己针对这个问题的思考过程以及解决方案，以备不时之需。</p>
@@ -76,14 +76,14 @@
     
     </summary>
     
-      <category term="oauth" scheme="http://needpp.com/tags/oauth/"/>
+      <category term="oauth" scheme="http://i.anicy.me/tags/oauth/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[GeoLife Model on LetZink]]></title>
-    <link href="http://needpp.com/2015/09/01/Geolife%20on%20LetZink/"/>
-    <id>http://needpp.com/2015/09/01/Geolife on LetZink/</id>
+    <link href="http://i.anicy.me/2015/09/01/Geolife%20on%20LetZink/"/>
+    <id>http://i.anicy.me/2015/09/01/Geolife on LetZink/</id>
     <published>2015-08-31T16:00:00.000Z</published>
     <updated>2015-10-24T13:37:33.928Z</updated>
     <content type="html"><![CDATA[<h3 id="代码结构">代码结构</h3><p><img src="http://needpp.qiniudn.com/2015/09/01/ba63550f-5079-11e5-aa5e-87176098b650.jpg" alt=""></p>
@@ -123,18 +123,18 @@
 <h3 id="数据预处理]]>
     </summary>
     
-      <category term="gps" scheme="http://needpp.com/tags/gps/"/>
+      <category term="gps" scheme="http://i.anicy.me/tags/gps/"/>
     
-      <category term="ml" scheme="http://needpp.com/tags/ml/"/>
+      <category term="ml" scheme="http://i.anicy.me/tags/ml/"/>
     
-      <category term="model" scheme="http://needpp.com/tags/model/"/>
+      <category term="model" scheme="http://i.anicy.me/tags/model/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[markdown编辑器]]></title>
-    <link href="http://needpp.com/2015/07/01/markdown%E7%BC%96%E8%BE%91%E5%99%A8/"/>
-    <id>http://needpp.com/2015/07/01/markdown编辑器/</id>
+    <link href="http://i.anicy.me/2015/07/01/markdown%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <id>http://i.anicy.me/2015/07/01/markdown编辑器/</id>
     <published>2015-07-01T04:38:40.000Z</published>
     <updated>2015-07-01T14:52:40.204Z</updated>
     <content type="html"><![CDATA[<p>使用七牛作图床，迁移至静态博客后贴图太麻烦，需要上传图片到图床，然后把链接复制回文件进行引用。简直就是浪费绳命！</p>
@@ -155,16 +155,16 @@
 <p><img src="h]]>
     </summary>
     
-      <category term="markdown" scheme="http://needpp.com/tags/markdown/"/>
+      <category term="markdown" scheme="http://i.anicy.me/tags/markdown/"/>
     
-      <category term="tools" scheme="http://needpp.com/tags/tools/"/>
+      <category term="tools" scheme="http://i.anicy.me/tags/tools/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[细思恐极]]></title>
-    <link href="http://needpp.com/2015/06/30/%E7%BB%86%E6%80%9D%E6%81%90%E6%9E%81/"/>
-    <id>http://needpp.com/2015/06/30/细思恐极/</id>
+    <link href="http://i.anicy.me/2015/06/30/%E7%BB%86%E6%80%9D%E6%81%90%E6%9E%81/"/>
+    <id>http://i.anicy.me/2015/06/30/细思恐极/</id>
     <published>2015-06-30T06:35:52.000Z</published>
     <updated>2015-06-30T01:38:56.743Z</updated>
     <content type="html"><![CDATA[<p>华丽的分割线</p>
@@ -178,14 +178,14 @@
 ]]>
     </summary>
     
-      <category term="life" scheme="http://needpp.com/tags/life/"/>
+      <category term="life" scheme="http://i.anicy.me/tags/life/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[起风了]]></title>
-    <link href="http://needpp.com/2015/06/30/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
-    <id>http://needpp.com/2015/06/30/起风了/</id>
+    <link href="http://i.anicy.me/2015/06/30/%E8%B5%B7%E9%A3%8E%E4%BA%86/"/>
+    <id>http://i.anicy.me/2015/06/30/起风了/</id>
     <published>2015-06-29T16:00:00.000Z</published>
     <updated>2015-06-30T12:58:25.363Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7punic.com1.z0.glb.clouddn.com/y69mc5l7fpjbgr0vh3dty6o0i1.png" alt=""></p>
@@ -197,14 +197,14 @@
 ]]>
     </summary>
     
-      <category term="life" scheme="http://needpp.com/tags/life/"/>
+      <category term="life" scheme="http://i.anicy.me/tags/life/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[临时存储]]></title>
-    <link href="http://needpp.com/2015/06/29/%E4%B8%B4%E6%97%B6%E5%AD%98%E5%82%A8/"/>
-    <id>http://needpp.com/2015/06/29/临时存储/</id>
+    <link href="http://i.anicy.me/2015/06/29/%E4%B8%B4%E6%97%B6%E5%AD%98%E5%82%A8/"/>
+    <id>http://i.anicy.me/2015/06/29/临时存储/</id>
     <published>2015-06-28T16:00:00.000Z</published>
     <updated>2015-06-28T13:58:59.465Z</updated>
     <content type="html"></content>
@@ -212,14 +212,14 @@
     
     </summary>
     
-      <category term="temp" scheme="http://needpp.com/tags/temp/"/>
+      <category term="temp" scheme="http://i.anicy.me/tags/temp/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[数学公式测试]]></title>
-    <link href="http://needpp.com/2015/06/25/mathjax/"/>
-    <id>http://needpp.com/2015/06/25/mathjax/</id>
+    <link href="http://i.anicy.me/2015/06/25/mathjax/"/>
+    <id>http://i.anicy.me/2015/06/25/mathjax/</id>
     <published>2015-06-25T06:35:52.000Z</published>
     <updated>2015-06-25T06:46:50.331Z</updated>
     <content type="html"><![CDATA[<p>$$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
@@ -233,8 +233,8 @@
   
   <entry>
     <title><![CDATA[科学上网备忘]]></title>
-    <link href="http://needpp.com/2015/06/08/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    <id>http://needpp.com/2015/06/08/科学上网/</id>
+    <link href="http://i.anicy.me/2015/06/08/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    <id>http://i.anicy.me/2015/06/08/科学上网/</id>
     <published>2015-06-07T16:00:00.000Z</published>
     <updated>2015-06-25T07:33:14.930Z</updated>
     <content type="html"><![CDATA[<p>优选服务器:<br>(自动优选, 不定期更换, 请使用域名为服务器地址.)<br>IPv4: auto.v4.omicronplus.com<br>IPv6: auto.v6.omicronplus.com<br>加密方法: aes-256-cfb<br>端口: 4000<br>密码: <em>**</em></p>
@@ -246,16 +246,16 @@
     <![CDATA[<p>优选服务器:<br>(自动优选, 不定期更换, 请使用域名为服务器地址.)<br>IPv4: auto.v4.omicronplus.com<br>IPv6: auto.v6.omicronplus.com<br>加密方法: aes-256-cfb<br>端口: 4000<]]>
     </summary>
     
-      <category term="ss" scheme="http://needpp.com/tags/ss/"/>
+      <category term="ss" scheme="http://i.anicy.me/tags/ss/"/>
     
-      <category term="tools" scheme="http://needpp.com/tags/tools/"/>
+      <category term="tools" scheme="http://i.anicy.me/tags/tools/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[多服务器间如何共享session]]></title>
-    <link href="http://needpp.com/2015/05/25/%E5%A4%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%A6%82%E4%BD%95%E5%85%B1%E4%BA%ABsession/"/>
-    <id>http://needpp.com/2015/05/25/多服务器间如何共享session/</id>
+    <link href="http://i.anicy.me/2015/05/25/%E5%A4%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%97%B4%E5%A6%82%E4%BD%95%E5%85%B1%E4%BA%ABsession/"/>
+    <id>http://i.anicy.me/2015/05/25/多服务器间如何共享session/</id>
     <published>2015-05-24T16:00:00.000Z</published>
     <updated>2015-06-26T05:03:05.653Z</updated>
     <content type="html"><![CDATA[<p>留空</p>
@@ -269,14 +269,14 @@
 ]]>
     </summary>
     
-      <category term="linux" scheme="http://needpp.com/tags/linux/"/>
+      <category term="linux" scheme="http://i.anicy.me/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[决策树、CART、GBRT、Adaboost]]></title>
-    <link href="http://needpp.com/2015/05/25/%E5%86%B3%E7%AD%96%E6%A0%91%E3%80%81CART%E3%80%81GBRT%E3%80%81Adaboost/"/>
-    <id>http://needpp.com/2015/05/25/决策树、CART、GBRT、Adaboost/</id>
+    <link href="http://i.anicy.me/2015/05/25/%E5%86%B3%E7%AD%96%E6%A0%91%E3%80%81CART%E3%80%81GBRT%E3%80%81Adaboost/"/>
+    <id>http://i.anicy.me/2015/05/25/决策树、CART、GBRT、Adaboost/</id>
     <published>2015-05-24T16:00:00.000Z</published>
     <updated>2015-06-26T05:03:42.989Z</updated>
     <content type="html"><![CDATA[<p>决策树是以实例为基础的归纳学习算法。 它从一组无次序、无规则的元组中推理出决策树表示形式的分类规则。它采用自顶向下的递归方式，在决策树的内部结点进行属性值的比较，并根据不同的属性值从该结点向下分支，叶结点是要学习划分的类。从根到叶结点的一条路径就对应着一条合取规则，整个决策树就对应着一组析取表达式规则。<br><a id="more"></a></p>
@@ -313,18 +313,18 @@
     
     </summary>
     
-      <category term="boost" scheme="http://needpp.com/tags/boost/"/>
+      <category term="boost" scheme="http://i.anicy.me/tags/boost/"/>
     
-      <category term="gbrt" scheme="http://needpp.com/tags/gbrt/"/>
+      <category term="gbrt" scheme="http://i.anicy.me/tags/gbrt/"/>
     
-      <category term="ml" scheme="http://needpp.com/tags/ml/"/>
+      <category term="ml" scheme="http://i.anicy.me/tags/ml/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[天猫移动推荐竞赛s1]]></title>
-    <link href="http://needpp.com/2015/05/15/%E5%A4%A9%E7%8C%AB%E7%A7%BB%E5%8A%A8%E6%8E%A8%E8%8D%90%E7%AB%9E%E8%B5%9Bs1/"/>
-    <id>http://needpp.com/2015/05/15/天猫移动推荐竞赛s1/</id>
+    <link href="http://i.anicy.me/2015/05/15/%E5%A4%A9%E7%8C%AB%E7%A7%BB%E5%8A%A8%E6%8E%A8%E8%8D%90%E7%AB%9E%E8%B5%9Bs1/"/>
+    <id>http://i.anicy.me/2015/05/15/天猫移动推荐竞赛s1/</id>
     <published>2015-05-14T16:00:00.000Z</published>
     <updated>2015-06-26T05:04:19.860Z</updated>
     <content type="html"><![CDATA[<h3 id="create_table">create table</h3><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">create <span class="tag">table</span> t(</span><br><span class="line">uid <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span>,</span><br><span class="line">iid <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span>,</span><br><span class="line">type int ,</span><br><span class="line">ugeo <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">10</span>)</span></span>,</span><br><span class="line">icg <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span>,</span><br><span class="line"><span class="tag">time</span> date</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">create <span class="tag">table</span> item(</span><br><span class="line">iid <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span>,</span><br><span class="line">igeo <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">10</span>)</span></span>,</span><br><span class="line">icg <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
@@ -342,16 +342,16 @@
     
     </summary>
     
-      <category term="dm" scheme="http://needpp.com/tags/dm/"/>
+      <category term="dm" scheme="http://i.anicy.me/tags/dm/"/>
     
-      <category term="tmall" scheme="http://needpp.com/tags/tmall/"/>
+      <category term="tmall" scheme="http://i.anicy.me/tags/tmall/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[IJCAI2015重复购买用户预测]]></title>
-    <link href="http://needpp.com/2015/04/30/IJCAI2015%E9%87%8D%E5%A4%8D%E8%B4%AD%E4%B9%B0%E7%94%A8%E6%88%B7%E9%A2%84%E6%B5%8B/"/>
-    <id>http://needpp.com/2015/04/30/IJCAI2015重复购买用户预测/</id>
+    <link href="http://i.anicy.me/2015/04/30/IJCAI2015%E9%87%8D%E5%A4%8D%E8%B4%AD%E4%B9%B0%E7%94%A8%E6%88%B7%E9%A2%84%E6%B5%8B/"/>
+    <id>http://i.anicy.me/2015/04/30/IJCAI2015重复购买用户预测/</id>
     <published>2015-04-29T16:00:00.000Z</published>
     <updated>2015-06-26T03:58:19.548Z</updated>
     <content type="html"><![CDATA[<h3 id="create_table">create table</h3><p>首先创建一个数据库表<br><figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">#字段含义分别为 用户id 商品id 类别id 卖家id 品牌id 时间 操作行为</span><br><span class="line">create <span class="tag">table</span> big(</span><br><span class="line">uid <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span>,</span><br><span class="line">iid <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span>,</span><br><span class="line">cid <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span> ,</span><br><span class="line">sid <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span>,</span><br><span class="line">bid <span class="function"><span class="title">varchar</span><span class="params">(<span class="number">15</span>)</span></span>,</span><br><span class="line"><span class="tag">time</span> int,</span><br><span class="line">action tinyint</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="id">#create</span> index on field `aciton` ...</span><br><span class="line">create index  index_action on <span class="function"><span class="title">big</span><span class="params">(action)</span></span></span><br></pre></td></tr></table></figure></p>
@@ -375,14 +375,14 @@
     
     </summary>
     
-      <category term="ijcai" scheme="http://needpp.com/tags/ijcai/"/>
+      <category term="ijcai" scheme="http://i.anicy.me/tags/ijcai/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[pandas数据操作]]></title>
-    <link href="http://needpp.com/2015/04/27/pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/"/>
-    <id>http://needpp.com/2015/04/27/pandas数据操作/</id>
+    <link href="http://i.anicy.me/2015/04/27/pandas%E6%95%B0%E6%8D%AE%E6%93%8D%E4%BD%9C/"/>
+    <id>http://i.anicy.me/2015/04/27/pandas数据操作/</id>
     <published>2015-04-26T16:00:00.000Z</published>
     <updated>2015-06-26T04:00:42.776Z</updated>
     <content type="html"><![CDATA[<h2 id="Pandas_数据处理">Pandas 数据处理</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">imort pandas <span class="keyword">as</span> pd</span><br><span class="line">生成随机数</span><br><span class="line">s=np.random.randint (<span class="number">0</span>,<span class="number">15951</span>,<span class="number">5000</span>)</span><br><span class="line">讲dataframe的数据写入csv文件</span><br><span class="line">dtest.to_csv (<span class="string">"test.csv"</span>,index=<span class="keyword">False</span>)</span><br><span class="line">读取csv文件到dataframe</span><br><span class="line">test=pd.read_csv(<span class="string">"test_format1.csv"</span>)</span><br><span class="line">添加一列</span><br><span class="line">c[<span class="string">'lable'</span>]=e</span><br><span class="line">删除一列</span><br><span class="line">dtest=d.drop([<span class="string">'prob'</span>],axis=<span class="number">1</span>)</span><br><span class="line">join操作</span><br><span class="line">d=pd.merge (test,b,on=[<span class="string">'user_id'</span>,<span class="string">'merchant_id'</span>])</span><br></pre></td></tr></table></figure>
@@ -394,16 +394,16 @@
     
     </summary>
     
-      <category term="pandas" scheme="http://needpp.com/tags/pandas/"/>
+      <category term="pandas" scheme="http://i.anicy.me/tags/pandas/"/>
     
-      <category term="python" scheme="http://needpp.com/tags/python/"/>
+      <category term="python" scheme="http://i.anicy.me/tags/python/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Q命令在csv和tsv上使用sql语句]]></title>
-    <link href="http://needpp.com/2015/04/22/Q%E5%91%BD%E4%BB%A4%E5%9C%A8csv%E5%92%8Ctsv%E4%B8%8A%E4%BD%BF%E7%94%A8sql%E8%AF%AD%E5%8F%A5/"/>
-    <id>http://needpp.com/2015/04/22/Q命令在csv和tsv上使用sql语句/</id>
+    <link href="http://i.anicy.me/2015/04/22/Q%E5%91%BD%E4%BB%A4%E5%9C%A8csv%E5%92%8Ctsv%E4%B8%8A%E4%BD%BF%E7%94%A8sql%E8%AF%AD%E5%8F%A5/"/>
+    <id>http://i.anicy.me/2015/04/22/Q命令在csv和tsv上使用sql语句/</id>
     <published>2015-04-21T16:00:00.000Z</published>
     <updated>2015-06-25T01:10:06.788Z</updated>
     <content type="html"><![CDATA[<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">q allows performing SQL-like statements <span class="command"><span class="keyword">on</span> <span class="title">tabular</span> <span class="title">text</span> <span class="title">data</span>. <span class="title">Its</span> <span class="title">purpose</span> <span class="title">is</span> <span class="title">to</span> <span class="title">bring</span> <span class="title">SQL</span> <span class="title">expressive</span> <span class="title">power</span> <span class="title">to</span> <span class="title">the</span> <span class="title">Linux</span> <span class="title">command</span> <span class="title">line</span> <span class="title">and</span> <span class="title">to</span> <span class="title">provide</span> <span class="title">easy</span> <span class="title">access</span> <span class="title">to</span> <span class="title">text</span> <span class="title">as</span> <span class="title">actual</span> <span class="title">data</span>.</span></span><br><span class="line"></span><br><span class="line">Query should be <span class="operator">an</span> SQL-like query which <span class="operator">contains</span> filenames instead <span class="operator">of</span> table names (<span class="operator">or</span> - <span class="keyword">for</span> <span class="keyword">stdin</span>). The query itself should be provided <span class="keyword">as</span> <span class="constant">one</span> parameter <span class="built_in">to</span> <span class="operator">the</span> tool (i.e. enclosed <span class="operator">in</span> quotes).</span><br><span class="line"></span><br><span class="line">Use -H <span class="built_in">to</span> signify that <span class="operator">the</span> input <span class="operator">contains</span> <span class="operator">a</span> header <span class="built_in">line</span>. Column names will be detected automatically <span class="operator">in</span> that <span class="keyword">case</span>, <span class="operator">and</span> can be used <span class="operator">in</span> <span class="operator">the</span> query. If this option is <span class="operator">not</span> provided, columns will be named cX, starting <span class="operator">with</span> <span class="number">1</span> (e.g. q <span class="string">"SELECT c3,c8 from ..."</span>).</span><br><span class="line"></span><br><span class="line">Use -d <span class="built_in">to</span> specify <span class="operator">the</span> input delimiter.</span><br><span class="line"></span><br><span class="line">Column types are auto detected <span class="keyword">by</span> <span class="operator">the</span> tool, no casting is needed.</span><br><span class="line"></span><br><span class="line">Please note that column names that <span class="built_in">include</span> spaces need <span class="built_in">to</span> be used <span class="operator">in</span> <span class="operator">the</span> query <span class="operator">with</span> back-<span class="built_in">ticks</span>, <span class="keyword">as</span> per <span class="operator">the</span> sqlite standard.</span><br><span class="line"></span><br><span class="line">Query/Input/Output encodings are fully supported (<span class="operator">and</span> q tries <span class="built_in">to</span> provide out-<span class="operator">of</span>-<span class="operator">the</span>-box usability <span class="operator">in</span> that area). Please use -e,-E <span class="operator">and</span> -Q <span class="built_in">to</span> control encoding <span class="keyword">if</span> needed.</span><br><span class="line"></span><br><span class="line">All sqlite3 SQL constructs are supported, including joins across <span class="built_in">files</span> (use <span class="operator">an</span> <span class="built_in">alias</span> <span class="keyword">for</span> <span class="keyword">each</span> table).</span><br><span class="line">See <span class="keyword">https</span>://github.com/harelba/q <span class="keyword">for</span> more details.</span><br></pre></td></tr></table></figure>
@@ -414,14 +414,14 @@
     <![CDATA[<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">q allows performing SQL-like statements <span c]]>
     </summary>
     
-      <category term="q" scheme="http://needpp.com/tags/q/"/>
+      <category term="q" scheme="http://i.anicy.me/tags/q/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[spark car]]></title>
-    <link href="http://needpp.com/2015/04/08/spark%20car/"/>
-    <id>http://needpp.com/2015/04/08/spark car/</id>
+    <link href="http://i.anicy.me/2015/04/08/spark%20car/"/>
+    <id>http://i.anicy.me/2015/04/08/spark car/</id>
     <published>2015-04-07T16:00:00.000Z</published>
     <updated>2015-06-25T01:10:06.788Z</updated>
     <content type="html"><![CDATA[<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">bin<span class="regexp">/spark-submit --class CarCheck --master yarn-client  /</span>home<span class="regexp">/spark/</span>temp<span class="regexp">/lib/</span>SparkExample.jar  <span class="string">hdfs:</span><span class="comment">//master:9000/t/newfile hdfs://master:9000/t/output2</span></span><br></pre></td></tr></table></figure>
@@ -431,16 +431,16 @@
     <![CDATA[<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">bin<span class="regexp">/spark-submit --class CarCheck ]]>
     </summary>
     
-      <category term="car" scheme="http://needpp.com/tags/car/"/>
+      <category term="car" scheme="http://i.anicy.me/tags/car/"/>
     
-      <category term="spark" scheme="http://needpp.com/tags/spark/"/>
+      <category term="spark" scheme="http://i.anicy.me/tags/spark/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[关于博主]]></title>
-    <link href="http://needpp.com/2015/03/25/Resume/"/>
-    <id>http://needpp.com/2015/03/25/Resume/</id>
+    <link href="http://i.anicy.me/2015/03/25/Resume/"/>
+    <id>http://i.anicy.me/2015/03/25/Resume/</id>
     <published>2015-03-24T16:00:00.000Z</published>
     <updated>2015-06-26T05:22:25.535Z</updated>
     <content type="html"><![CDATA[<h1 id="个人信息">个人信息</h1><ul>
@@ -548,18 +548,18 @@
     
     </summary>
     
-      <category term="2015" scheme="http://needpp.com/tags/2015/"/>
+      <category term="2015" scheme="http://i.anicy.me/tags/2015/"/>
     
-      <category term="about" scheme="http://needpp.com/tags/about/"/>
+      <category term="about" scheme="http://i.anicy.me/tags/about/"/>
     
-      <category term="me" scheme="http://needpp.com/tags/me/"/>
+      <category term="me" scheme="http://i.anicy.me/tags/me/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[spark demo to save...]]></title>
-    <link href="http://needpp.com/2015/03/18/spark%20demo%20to%20save.../"/>
-    <id>http://needpp.com/2015/03/18/spark demo to save.../</id>
+    <link href="http://i.anicy.me/2015/03/18/spark%20demo%20to%20save.../"/>
+    <id>http://i.anicy.me/2015/03/18/spark demo to save.../</id>
     <published>2015-03-17T16:00:00.000Z</published>
     <updated>2015-06-25T01:10:06.800Z</updated>
     <content type="html"><![CDATA[<figure class="highlight openscad"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * Created by spark on 15-3-18.</span><br><span class="line"> */</span></span><br><span class="line"><span class="built_in">import</span> org.apache.spark.SparkContext._</span><br><span class="line"><span class="built_in">import</span> org.apache.spark.&#123;SparkContext, SparkConf&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/** Computes an approximation to pi */</span></span><br><span class="line">object SparkDemo &#123;</span><br><span class="line">  def main<span class="params">(args: Array[String])</span> &#123;</span><br><span class="line">    <span class="keyword">if</span><span class="params">(args.length!=<span class="number">2</span>)</span>&#123;</span><br><span class="line">      System.err.println<span class="params">(<span class="string">"Usage : SparkDemo &lt;input file&gt; &lt;output file &gt;"</span>)</span></span><br><span class="line">      System.exit<span class="params">(<span class="number">1</span>)</span></span><br><span class="line">    &#125;</span><br><span class="line">    val conf = new SparkConf<span class="params">()</span>.setMaster<span class="params">(<span class="string">"local"</span>)</span>.setAppName<span class="params">(<span class="string">"WordCount"</span>)</span></span><br><span class="line">    val spark = new SparkContext<span class="params">(conf)</span></span><br><span class="line"></span><br><span class="line">    val file=spark.textFile<span class="params">(args<span class="params">(<span class="number">0</span>)</span>)</span></span><br><span class="line">    val counts=file.map<span class="params">(<span class="params">(_,<span class="number">1</span>)</span>)</span>.reduceByKey<span class="params">(_+_)</span></span><br><span class="line">    counts.saveAsTextFile<span class="params">(args<span class="params">(<span class="number">1</span>)</span>)</span></span><br><span class="line">    spark.stop<span class="params">()</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -568,14 +568,14 @@
     <![CDATA[<figure class="highlight openscad"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line]]>
     </summary>
     
-      <category term="spark" scheme="http://needpp.com/tags/spark/"/>
+      <category term="spark" scheme="http://i.anicy.me/tags/spark/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[something]]></title>
-    <link href="http://needpp.com/2015/03/18/something/"/>
-    <id>http://needpp.com/2015/03/18/something/</id>
+    <link href="http://i.anicy.me/2015/03/18/something/"/>
+    <id>http://i.anicy.me/2015/03/18/something/</id>
     <published>2015-03-17T16:00:00.000Z</published>
     <updated>2015-06-25T01:10:06.800Z</updated>
     <content type="html"><![CDATA[<figure class="highlight processing"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="built_in">int</span> BinarySearch(<span class="built_in">int</span> a[],<span class="built_in">int</span> num)&#123;</span><br><span class="line">	<span class="built_in">int</span> len=a.lenght;</span><br><span class="line">	<span class="built_in">int</span> low=<span class="number">0</span>,high=len-<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(low&lt;=high)&#123;</span><br><span class="line">		<span class="built_in">int</span> mid=(low+high)/<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">if</span>(a[mid]==num)&#123;</span><br><span class="line">			<span class="keyword">return</span> mid;</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(a[mid]&lt;num)&#123;</span><br><span class="line">			low=mid+<span class="number">1</span>;</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			high=mid-<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="built_in">int</span>  BinarySearch(<span class="built_in">int</span> a[],<span class="built_in">int</span> lo, <span class="built_in">int</span> hi,<span class="built_in">int</span> <span class="variable">key</span>)&#123;</span><br><span class="line">	<span class="keyword">if</span>(lo&lt;=hi)&#123;</span><br><span class="line">		<span class="built_in">int</span> mid=(low+high)/<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">if</span>(<span class="variable">key</span>==a[mid])</span><br><span class="line">			<span class="keyword">return</span> mid;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(<span class="variable">key</span>&lt;a[mid]) </span><br><span class="line">			<span class="keyword">return</span> BinarySearch(<span class="variable">key</span>,lo,mid-<span class="number">1</span>,<span class="variable">key</span>);</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(<span class="variable">key</span>&gt;a[mid]) </span><br><span class="line">			<span class="keyword">return</span> BinarySearch(<span class="variable">key</span>,mid+<span class="number">1</span>,high,<span class="variable">key</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// swap</span></span><br><span class="line"><span class="keyword">void</span> swap(<span class="built_in">int</span> a[] ,<span class="built_in">int</span> i,<span class="built_in">int</span> j)&#123;</span><br><span class="line">	<span class="built_in">int</span> temp=a[i];</span><br><span class="line">	a[i]=a[j];</span><br><span class="line">	a[j]=temp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// select sort</span></span><br><span class="line"><span class="keyword">void</span> selectsort(<span class="built_in">int</span> a[],<span class="built_in">int</span> len)&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">		<span class="built_in">int</span> <span class="built_in">min</span>=i;</span><br><span class="line">		<span class="comment">//from i+1 to find the mini</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="built_in">int</span> j=i+<span class="number">1</span>;j&lt;len;j++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[<span class="built_in">min</span>]&gt;a[j])&#123;</span><br><span class="line">				<span class="built_in">min</span>=j;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//swap with the i element</span></span><br><span class="line">		swap(a,i,<span class="built_in">min</span>);</span><br><span class="line">	&#125;	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> insertsort(<span class="built_in">int</span> a[],<span class="built_in">int</span> len)&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">1</span>;i&lt;len;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="built_in">int</span> j=i;j&gt;<span class="number">0</span>;j--)&#123;</span><br><span class="line">			<span class="keyword">if</span>(a[j]&lt;a[j-<span class="number">1</span>])&#123;</span><br><span class="line">				swap(a,j,j-<span class="number">1</span>)</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> shellsort(<span class="built_in">int</span> a[] ,<span class="built_in">int</span> len)&#123;</span><br><span class="line">	<span class="built_in">int</span> h=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(h&lt;len/<span class="number">3</span>) h=h*<span class="number">3</span>+<span class="number">1</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(h&gt;=<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="built_in">int</span> i=<span class="number">1</span>;i&lt;h;i++)&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="built_in">int</span> j=i;j&gt;=h;j=j-h)&#123;</span><br><span class="line">				<span class="keyword">if</span>(a[j]&lt;a[j-h])&#123;</span><br><span class="line">					swap(a,j,j-h);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span></span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		h=h/<span class="number">3</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//heap swim to top</span></span><br><span class="line"><span class="comment">//from boot to top</span></span><br><span class="line"><span class="keyword">void</span> swim(<span class="built_in">int</span> k )&#123;</span><br><span class="line">	<span class="keyword">while</span>(k&gt;<span class="number">1</span>&amp;&amp;pq[k]&gt;pq[k/<span class="number">2</span>])&#123;</span><br><span class="line">		swap(pq,k,k/<span class="number">2</span>);</span><br><span class="line">		k=k/<span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> sink(<span class="built_in">int</span> k)&#123;</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">2</span>*k&lt;n)&#123;</span><br><span class="line">		<span class="built_in">int</span> j=<span class="number">2</span>*k;</span><br><span class="line">		<span class="keyword">if</span>(pq[j]&lt;pq[j+<span class="number">1</span>]) j++;</span><br><span class="line">		<span class="keyword">if</span>(pq[k]&gt;pq[j]) <span class="keyword">break</span>;</span><br><span class="line">		<span class="comment">//else swap the parent and the bigger chilren</span></span><br><span class="line">		swap(pq,k,j);</span><br><span class="line">		<span class="comment">//set the current node to chilren</span></span><br><span class="line">		k=j;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> insertheap(<span class="built_in">int</span> s)&#123;</span><br><span class="line">	pq[++N]=s;</span><br><span class="line">	swim(N);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="built_in">int</span> delheaptop()&#123;</span><br><span class="line">	<span class="built_in">int</span> <span class="built_in">max</span>=pq[<span class="number">1</span>];</span><br><span class="line">	swap(pq,<span class="number">1</span>,N--);</span><br><span class="line">	sink(<span class="number">1</span>); <span class="comment">//rebuild the heap from up to down</span></span><br><span class="line">	<span class="comment">//set the last to default value</span></span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">max</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> getvalue(Node root,<span class="built_in">int</span> <span class="variable">key</span>)&#123;</span><br><span class="line">	<span class="keyword">if</span>(root=<span class="keyword">null</span>) <span class="keyword">return</span>;</span><br><span class="line">	<span class="keyword">if</span>(<span class="variable">key</span>&gt;root.<span class="variable">key</span>) <span class="keyword">return</span> getvalue(root.right);</span><br><span class="line">	<span class="keyword">if</span>(<span class="variable">key</span>&lt;root.<span class="variable">key</span>) <span class="keyword">return</span> getvalue(root.left);</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">return</span> root.value;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> getvalue(<span class="built_in">int</span> <span class="variable">key</span>)&#123;</span><br><span class="line">	Node node=root;</span><br><span class="line">	<span class="keyword">while</span>(node!=<span class="keyword">null</span>)&#123;</span><br><span class="line">		<span class="keyword">if</span>(<span class="variable">key</span>&gt;node.<span class="variable">key</span>)&#123;</span><br><span class="line">			node=node.right;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(<span class="variable">key</span>&lt;node.<span class="variable">key</span>)&#123;</span><br><span class="line">			node=node.left;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			result=node.value;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> partition(<span class="built_in">int</span> a[] ,<span class="built_in">int</span> left,<span class="built_in">int</span> right)&#123;</span><br><span class="line">	<span class="built_in">int</span> i=left,j=right+<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="keyword">true</span>)&#123;</span><br><span class="line">		<span class="keyword">while</span>(a[++i]&lt;a[left])</span><br><span class="line">			<span class="keyword">if</span>(i==right) <span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">while</span>(a[--j]&gt;a[left])</span><br><span class="line">			<span class="keyword">if</span>(i==left) <span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">if</span>(i&gt;=j) <span class="keyword">break</span>;</span><br><span class="line">		swap(a,i,j)</span><br><span class="line">	&#125;</span><br><span class="line">	swap(a,j,left);</span><br><span class="line">	<span class="keyword">return</span> j;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> <span class="built_in">sort</span>(<span class="built_in">int</span> a[],<span class="built_in">int</span> low,<span class="built_in">int</span> high)&#123;</span><br><span class="line">	<span class="keyword">if</span>(low&gt;=high) <span class="keyword">return</span>;</span><br><span class="line">	<span class="built_in">int</span> partition=partition(a,low,high);</span><br><span class="line">	<span class="built_in">sort</span>(a,low,partion-<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">sort</span>(a,partion+<span class="number">1</span>,high);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">void</span> dfs(Graph g,<span class="built_in">int</span> v)&#123;</span><br><span class="line">	marked[v]=<span class="keyword">true</span>;</span><br><span class="line">	count++;</span><br><span class="line">	foreach(<span class="built_in">int</span> vertical in g.GetAdjacency(v))&#123;</span><br><span class="line">		<span class="keyword">if</span>(!marked(vertical))&#123;</span><br><span class="line">			dfs(g,vertical);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -584,14 +584,14 @@
     <![CDATA[<figure class="highlight processing"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="bu]]>
     </summary>
     
-      <category term="others" scheme="http://needpp.com/tags/others/"/>
+      <category term="others" scheme="http://i.anicy.me/tags/others/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[shell 判断hadoop 是否启动成功]]></title>
-    <link href="http://needpp.com/2015/01/18/shell%20%E5%88%A4%E6%96%ADhadoop%20%E6%98%AF%E5%90%A6%E5%90%AF%E5%8A%A8%E6%88%90%E5%8A%9F/"/>
-    <id>http://needpp.com/2015/01/18/shell 判断hadoop 是否启动成功/</id>
+    <link href="http://i.anicy.me/2015/01/18/shell%20%E5%88%A4%E6%96%ADhadoop%20%E6%98%AF%E5%90%A6%E5%90%AF%E5%8A%A8%E6%88%90%E5%8A%9F/"/>
+    <id>http://i.anicy.me/2015/01/18/shell 判断hadoop 是否启动成功/</id>
     <published>2015-01-17T16:00:00.000Z</published>
     <updated>2015-06-25T01:10:06.796Z</updated>
     <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">'启动hadoop环境'</span></span><br><span class="line"><span class="comment">#/home/spark/soft/hadoop-2.5.2/sbin/start-all.sh</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">'查看hadoop环境'</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">h1</span></span>()&#123;</span><br><span class="line"></span><br><span class="line">jps| awk <span class="string">'</span><br><span class="line">BEGIN&#123;count=0&#125;</span><br><span class="line">&#123;</span><br><span class="line">if($2=="NameNode" || $2=="SecondaryNameNode" || $2=="JobTracker")&#123;</span><br><span class="line">	count+=1</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">END&#123;</span><br><span class="line">if(count==3)&#123;</span><br><span class="line">print("start v1 success")</span><br><span class="line">&#125;else &#123;</span><br><span class="line">print("v1 fail start")</span><br><span class="line">&#125;</span><br><span class="line">&#125;'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">h2</span></span>()&#123;</span><br><span class="line"></span><br><span class="line">jps| awk <span class="string">'</span><br><span class="line">BEGIN&#123;count=0&#125;</span><br><span class="line">&#123;</span><br><span class="line">if($2=="NameNode" || $2=="SecondaryNameNode" || $2=="ResourceManager")&#123;</span><br><span class="line">	count+=1</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">END&#123;</span><br><span class="line">if(count==3)&#123;</span><br><span class="line">print("start v2 success")</span><br><span class="line">&#125;else &#123;</span><br><span class="line">print("v2 fail start")</span><br><span class="line">&#125;</span><br><span class="line">&#125;'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">version=`hadoop version | awk <span class="string">'&#123;if(NR==1)&#123;print $2 &#125;&#125;'</span> | cut -b <span class="number">1</span>`</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$version</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$version</span> <span class="operator">-gt</span> <span class="number">1</span> ]; </span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">'hadoop v2'</span>;</span><br><span class="line">h2;</span><br><span class="line"><span class="keyword">else</span> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">'hadoop v1'</span>;</span><br><span class="line">h1;</span><br><span class="line"><span class="keyword">fi</span>;</span><br></pre></td></tr></table></figure>
@@ -601,16 +601,16 @@
     <![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span></span><br><span ]]>
     </summary>
     
-      <category term="hadoop" scheme="http://needpp.com/tags/hadoop/"/>
+      <category term="hadoop" scheme="http://i.anicy.me/tags/hadoop/"/>
     
-      <category term="shell" scheme="http://needpp.com/tags/shell/"/>
+      <category term="shell" scheme="http://i.anicy.me/tags/shell/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Ubuntu  配置 动态静态ip]]></title>
-    <link href="http://needpp.com/2015/01/13/Ubuntu%20%20%E9%85%8D%E7%BD%AE%20%E5%8A%A8%E6%80%81%E9%9D%99%E6%80%81ip/"/>
-    <id>http://needpp.com/2015/01/13/Ubuntu  配置 动态静态ip/</id>
+    <link href="http://i.anicy.me/2015/01/13/Ubuntu%20%20%E9%85%8D%E7%BD%AE%20%E5%8A%A8%E6%80%81%E9%9D%99%E6%80%81ip/"/>
+    <id>http://i.anicy.me/2015/01/13/Ubuntu  配置 动态静态ip/</id>
     <published>2015-01-12T16:00:00.000Z</published>
     <updated>2015-06-26T05:01:50.893Z</updated>
     <content type="html"><![CDATA[<p>网络Ubuntu Linux配置文件是：/etc/network/interfaces,打开后里面可设置DHCP或手动设置静态ip。auto eth0，意思是让网卡开机自动挂载。</p>
@@ -649,9 +649,9 @@
     
     </summary>
     
-      <category term="ip" scheme="http://needpp.com/tags/ip/"/>
+      <category term="ip" scheme="http://i.anicy.me/tags/ip/"/>
     
-      <category term="ubuntu" scheme="http://needpp.com/tags/ubuntu/"/>
+      <category term="ubuntu" scheme="http://i.anicy.me/tags/ubuntu/"/>
     
   </entry>
   
